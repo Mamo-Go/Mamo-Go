@@ -25,37 +25,28 @@
         body {
             margin: 0;
             padding: 0;
-            font-family: 'Sans', Comic Sans MS;
+            font-family: 'Sans-serif', Verdana;
             color: #fff; /* تغيير لون النص ليظهر فوق الفيديو */
             text-align: center;
         }
         .container {
-            padding-top: 0px;
-            padding-bottom: 200px;
-            padding-left:100px;
-            padding-right:100px;
-            margin-top:150px;
-            background: rgba(0, 0, 0, 0.8); /* خلفية شفافة لتوضيح النص */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background: rgba(0, 0, 0, 0.7); /* خلفية شفافة لتوضيح النص */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
             border-radius: 15px;
-            
+            margin: 120px;
+            padding: 20px;
         }
         h1 {
-            color: #00ff00;
-            font-size: 2.3em;
-            font-weight: bold;
-            margin-bottom: 20px;
+            color: #66ff33;
+            font-size: 2.5em;
+            margin-top: 1px;
         }
         p {
-            
             font-size: 1.5em;
-            font-weight: bold;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
         p1 {
-    
             font-size: 1.3em;
-            font-weight: bold;
             margin-bottom: 20px;
         }
         .button {
@@ -65,13 +56,13 @@
             font-size: 18px;
             color: #fff;
             text-decoration: none;
-            background-color: #006600;
+            background-color: #006610;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             transition: all 0.3s ease;
         }
         .button:hover {
-            background-color: #0056b3;
+            background-color: #99ff33;
             transform: scale(1.05);
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
         }
@@ -81,15 +72,38 @@
             color: #ccc;
         }
         .footer a {
-            color: #00ff00;
+            color: #66ff33;
             text-decoration: none;
             font-weight: bold;
             transition: color 0.3s, text-decoration 0.3s;
-           
         }
         .footer a:hover {
             color: #0056b3;
             text-decoration: underline;
+        }
+
+        /* دعم الشاشات الصغيرة */
+        @media (max-width: 480px) {
+            .container {
+                margin: 20px;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            p {
+                font-size: 1.2em;
+            }
+            p1 {
+                font-size: 1.1em;
+            }
+            .button {
+                font-size: 16px;
+                padding: 10px 20px;
+            }
+            .footer {
+                font-size: 14px;
+            }
         }
     </style>
 </head>
