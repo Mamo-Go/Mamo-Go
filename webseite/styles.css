@@ -738,56 +738,46 @@ margin-bottom: 15px;
   /* الشريط العلوي المثبت */
 .sticky-header {
     display: flex;
-    align-items: center; /* محاذاة النصوص بشكل عمودي */
-    padding-left:1px;
-    padding-right: 1px; 
-    padding-top:20 px ;
-    padding-bottom:20;
+    align-items: center; 
+    padding-left: 8px;
+    padding-right: 3px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     background: #1A452F; /* اللون الخلفي */
     position: sticky;
     top: 0;
     z-index: 1000;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* تأثير الظل */
-    gap: 0px; /* مسافة بين النصوص */
+    gap: 1px; /* مسافة بين النصوص */
     white-space: nowrap; /* منع التفاف النصوص */
     width: 100vw; /* الشريط يغطي كامل عرض الشاشة */
-    
-    
 }
 
 /* قسم معلومات الاتصال */
 .sticky-header .contact-info {
     display: flex;
-    flex-wrap: nowrap; /* التأكد من أن النصوص لا تنتقل إلى سطر جديد */
-    gap: 1px; /* تقليل المسافات بين النصوص */
-    text-align: center; /* توسيط النصوص */
-    justify-content: center; /* محاذاة النصوص أفقياً */
-    flex: 1; /* جعل النصوص تأخذ المساحة المتاحة بالتساوي */
-    overflow: hidden; /* منع النصوص من تجاوز الحاوية */
+    justify-content: space-around; /* توزيع العناصر بالتساوي */
+    width: 100%;
+}
+
+/* العناصر الفردية داخل قسم الاتصال */
+.sticky-header .contact-item {
+    text-align: center; /* توسيط النصوص داخل كل عنصر */
+    max-width: 44%; /* تقسيم العرض بشكل متساوي */
 }
 
 /* النصوص داخل قسم الاتصال */
-.sticky-header .contact-info p {
+.sticky-header .contact-item p {
     font-size: 0.7rem;
-    text-align: center;
-    margin:0; /* إزالة المسافات الإضافية */
+    margin: 0; /* إزالة المسافات الإضافية */
+    color: rgb(208, 253, 199);
 }
 
-/* الروابط داخل قسم الاتصال */
-.sticky-header .contact-info a {
-    color: #d5dbdb; /* لون الرابط */
-    font-size: 0.7  rem;
-    text-align: center;
-    text-decoration: none; /* إزالة التسطير */
-    overflow-wrap: break-word; /* كسر الكلمات الطويلة إذا لزم الأمر */
-}
-
-/* اللون المميز */
-.sticky-header strong {
+/* العناوين داخل قسم الاتصال */
+.sticky-header .contact-item strong {
+    font-size: 1rem;
     color: #74e63c; /* اللون المميز */
 }
-
-    
 /* رأس الصفحة */
 .header {
     background: #1A252F; /* اللون الخلفي */
