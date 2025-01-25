@@ -739,17 +739,20 @@ margin-bottom: 15px;
 .sticky-header {
     display: flex;
     align-items: center; /* محاذاة النصوص بشكل عمودي */
-    padding: 15px 15px;
+    padding-left:1px;
+    padding-right: 1px; 
+    padding-top:20 px ;
+    padding-bottom:20;
     background: #1A452F; /* اللون الخلفي */
     position: sticky;
     top: 0;
     z-index: 1000;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* تأثير الظل */
-    gap: 50px; /* مسافة بين النصوص */
+    gap: 0px; /* مسافة بين النصوص */
     white-space: nowrap; /* منع التفاف النصوص */
     width: 100vw; /* الشريط يغطي كامل عرض الشاشة */
-    overflow: auto; /* السماح بالتمرير إذا تجاوز النص العرض */
-    padding-top:25px;
+    
+    
 }
 
 /* قسم معلومات الاتصال */
@@ -765,15 +768,15 @@ margin-bottom: 15px;
 
 /* النصوص داخل قسم الاتصال */
 .sticky-header .contact-info p {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     text-align: center;
-    margin: 0; /* إزالة المسافات الإضافية */
+    margin:0; /* إزالة المسافات الإضافية */
 }
 
 /* الروابط داخل قسم الاتصال */
 .sticky-header .contact-info a {
     color: #d5dbdb; /* لون الرابط */
-    font-size: 0.7rem;
+    font-size: 0.7  rem;
     text-align: center;
     text-decoration: none; /* إزالة التسطير */
     overflow-wrap: break-word; /* كسر الكلمات الطويلة إذا لزم الأمر */
