@@ -24,20 +24,24 @@ body {
     gap: 5px; /* مسافة بين النصوص */
     white-space: nowrap; /* يجعل الشريط على سطر واحد */
     width: 100vw; 
+      padding-top: 20px ; /* إزالة الحواف الداخلية */
+      padding-left:5px;
+      padding-right:5px;
+      padding-bottom:20px;
 }
 
 .sticky-header .contact-info {
     display: flex;
-    padding: 10px;
-    gap: 30px; /* مسافة بين النصوص */
+   
+    gap: 200px; /* مسافة بين النصوص */
     text-align: justify; /* توسيط النصوص */
     flex: 1; /* جعل النصوص تأخذ مساحة متساوية */
     justify-content: center;
 }
 
 .sticky-header .contact-info p {
-    margin: 0;
-    font-size: 1.3rem;
+    margin: 1px;
+    font-size: 1.5rem;
     word-wrap: break-word; /* منع تجاوز النصوص */
 }
 
@@ -734,50 +738,39 @@ margin-bottom: 15px;
 
 
 @media (max-width: 480px) {
+  .sticky-header {
+     
+      padding-top: 11px ; /* إزالة الحواف الداخلية */
+      padding-left:5px;
+      padding-right:5px;
+      padding-bottom:10px;
+      margin: 0; /* إزالة الحواف الخارجية */
+      background: #1A452F;
+      position: sticky;
+      
+      z-index: 1000;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      gap: 0; /* إزالة المسافات بين النصوص */
+      width: 100%;
+      box-sizing: border-box; /* لتجنب تأثير الحواف على العرض */
+  }
+
+  .sticky-header .contact-info {
+      width: 100%;
+      padding: 0;
     
-  /* الشريط العلوي المثبت */
-.sticky-header {
-    display: flex;
-    align-items: center; 
-    padding-left: 8px;
-    padding-right: 3px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background: #1A452F; /* اللون الخلفي */
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* تأثير الظل */
-    gap: 1px; /* مسافة بين النصوص */
-    white-space: nowrap; /* منع التفاف النصوص */
-    width: 100vw; /* الشريط يغطي كامل عرض الشاشة */
-}
+  }
 
-/* قسم معلومات الاتصال */
-.sticky-header .contact-info {
-    display: flex;
-    justify-content: space-around; /* توزيع العناصر بالتساوي */
-    width: 100%;
-}
+  .sticky-header .contact-item {
+      max-width: 100%;
+    
+  }
 
-/* العناصر الفردية داخل قسم الاتصال */
-.sticky-header .contact-item {
-    text-align: center; /* توسيط النصوص داخل كل عنصر */
-    max-width: 44%; /* تقسيم العرض بشكل متساوي */
-}
+ 
 
-/* النصوص داخل قسم الاتصال */
-.sticky-header .contact-item p {
-    font-size: 0.7rem;
-    margin: 0; /* إزالة المسافات الإضافية */
-    color: rgb(208, 253, 199);
-}
 
-/* العناوين داخل قسم الاتصال */
-.sticky-header .contact-item strong {
-    font-size: 1rem;
-    color: #74e63c; /* اللون المميز */
-}
+
+
 /* رأس الصفحة */
 .header {
     background: #1A252F; /* اللون الخلفي */
