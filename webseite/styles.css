@@ -33,7 +33,6 @@ body {
     text-align: justify; /* توسيط النصوص */
     flex: 1; /* جعل النصوص تأخذ مساحة متساوية */
     justify-content: center;
-    
 }
 
 .sticky-header .contact-info p {
@@ -85,8 +84,6 @@ body {
     justify-content: center;
     gap: 10px;
     margin-top: 10px;
-   
-    
     margin: 1px 50px;
 }
 
@@ -108,10 +105,10 @@ body {
 /* قائمة التنقل */
 .navbar {
     background-color: #2C3E40; /* اللون الخلفي */
-    padding: 1px;
+    padding: 0;
     text-align: center;
-    border: 3px solid #66ff33; /* إضافة إطار خارجي */
-    margin: 5px 5px;
+    border: 2px solid #66ff33; /* إضافة إطار خارجي */
+    margin: 0px 0px;
 }
 
 .navbar ul {
@@ -121,7 +118,6 @@ body {
     justify-content: center;
     gap: 30px;
     margin: 5px 5px;
-    
 }
 
 .navbar a {
@@ -207,7 +203,6 @@ body {
     gap: 10px;
     margin: 10px;
     margin-top: 1px;
-    
 }
 
 .service-card {
@@ -277,7 +272,6 @@ body {
 
 /* Map Section */
 #map {
-   
     width: 80%;
     border-radius: 15px;
     display: block;
@@ -287,8 +281,6 @@ body {
     margin-bottom: 10px; 
     border: 1px solid #66ff33; /* إضافة إطار خارجي */
 }
-
-
 
 /* Impressum */
 #impressum {
@@ -312,134 +304,690 @@ body {
     font-size: 1rem;
 }
 
-/* تحسين العرض للشاشات الصغيرة */
+
+
+
+
+
+
+
+
+/* تحسين العرض لجميع الشاشات */
+
+/* الشاشات الصغيرة جدًا (مثل الهواتف المحمولة الصغيرة) */
+@media (max-width: 480px) {
+    body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background: linear-gradient(135deg, #2C5E50, #BDC3C9); /* اللون الخلفي */
+        color: #333;
+        font-size: 1.4rem;
+overflow-x: hidden
+    }
+    
+ /* الشريط العلوي المثبت */
+.sticky-header {
+    display: flex;
+    justify-content: space-between; /* توزيع النصوص بالتساوي */
+    align-items: center; /* محاذاة النصوص بشكل عمودي */
+    padding: 20px 20px;
+    background: #1A452F; /* اللون الخلفي */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* تأثير الظل */
+    gap: 5px; /* مسافة بين النصوص */
+    white-space: nowrap; /* يجعل الشريط على سطر واحد */
+    width: 100%;
+    overflow: hidden; /* منع تجاوز المحتوى */
+    box-sizing: border-box; /* حصر الحشوات داخل الحاوية */
+}
+
+.sticky-header .contact-info {
+    display: flex;
+    padding: 1px;
+    gap: 5px; /* تقليل المسافة بين النصوص */
+    text-align: justify; /* توسيط النصوص */
+    flex: 1; /* جعل النصوص تأخذ مساحة متساوية */
+    justify-content: center;
+    flex-wrap: nowrap; /* منع النصوص من الانتقال إلى سطر جديد */
+    overflow: hidden; /* إخفاء أي نصوص زائدة */
+    text-overflow: ellipsis; /* إظهار النقاط عند التجاوز */
+    white-space: nowrap; /* إبقاء النصوص على سطر واحد */
+    max-width: 100%; /* منع النصوص من تجاوز العرض */
+}
+
+.sticky-header .contact-info p,
+.sticky-header .contact-info a {
+    margin: 0;
+    font-size: 0.7rem; /* تصغير النصوص */
+    overflow: hidden; /* إخفاء النصوص الزائدة */
+    text-overflow: ellipsis; /* إظهار النقاط الثلاث عند تجاوز النص */
+    white-space: nowrap; /* إبقاء النصوص على سطر واحد */
+    max-width: 100%; /* منع تجاوز النصوص لعرض الحاوية */
+}
+
+.sticky-header strong {
+    color: #74e63c; /* اللون المميز */
+}
+
+
+    /* رأس الصفحة */
+    .header {
+        background: #1A252F; /* اللون الخلفي */
+        text-align: center;
+        padding: 10px;
+        padding-bottom: 50px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* تأثير الظل */
+        margin: 0; /* إزالة الهوامش الجانبية */
+        width: 100vw; /* ملء الشاشة بالكامل */
+        box-sizing: border-box; /* التأكد من أن الحشوات محسوبة ضمن العرض */
+    }
+    
+    .header h1 {
+        font-size: 5rem;
+        margin: 1px;
+        color: #74e63c; /* اللون العنوان */
+        letter-spacing: 2px;
+    }
+    
+    .header .tagline {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.3rem;
+        margin-top: 10px;
+        font-weight: 300;
+        color: #74e63c; /* اللون المميز */
+    }
+    
+
+
+ /* حاوية الصور */
+.header-images {
+    display: flex;
+    justify-content: center; /* توسيط الصور أفقياً */
+    gap: 10px; /* مسافة بين الصور */
+    margin: 0 auto; /* توسيط الحاوية */
+    padding: 10px;
+     overflow-x: hidden; /* السماح بالتمرير الأفقي */
+    white-space: nowrap; /* منع الصور من الانتقال إلى سطر جديد */
+     width: 100%; /* جعل الحاوية تمتد حسب الشاشة */
+}
+
+/* الصورة الواحدة */
+.header-image {
+    width: 100% ; 
+    max-width: 100px; /* أقصى عرض للصورة */
+    height: auto; /* جعل الارتفاع تلقائي بناءً على العرض */
+    object-fit: cover; /* جعل الصورة تغطي المساحة المحددة دون تشويه */
+    border-radius: 15px; /* زوايا مستديرة للصورة */
+    transition: transform 0.3s ease;
+    flex-shrink: 0; /* منع الصور من الانكماش */
+}
+
+/* تأثير عند التمرير */
+.header-image:hover {
+    transform: translateY(-15px); /* رفع الصورة عند التمرير */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); /* تأثير الظل */
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+/* قائمة التنقل */
+.navbar {
+    background-color: #333; /* اللون الخلفي */
+    display: flex; /* استخدام flexbox لجعل العناصر في سطر واحد */
+    justify-content: center; /* توسيط العناصر داخل الشريط */
+    align-items: center; /* محاذاة العناصر عموديًا */
+    padding: 10px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* تأثير الظل */
+    width: 100%; /* جعل الشريط يمتد بالكامل */
+}
+
+/* قائمة الأزرار */
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* عرض الأزرار في صف واحد */
+    justify-content: center; /* توسيط الأزرار ضمن الحاوية */
+    margin: 0;
+    gap: 10px; /* المسافة بين الأزرار */
+}
+
+/* تنسيق الرابط */
+.navbar a {
+    text-decoration: none;
+    color: #a1f244; /* اللون الرابط */
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    padding: 10px 20px; /* إضافة بعض المساحة حول النص */
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    background-color: transparent;
+}
+
+/* تأثير الخط تحت الرابط عند التمرير */
+/* قائمة التنقل */
+.navbar {
+    background-color: #333; /* اللون الخلفي */
+    padding: 10px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* تأثير الظل */
+    width: 100%;
+    display: flex; /* تأكد من أن الحاوية هي flex */
+     /* توسيط الأزرار أفقيًا */
+     /* توسيط الأزرار عموديًا */
+    gap: 20px; /* مسافة بين الأزرار */
+    flex-direction: row;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex; /* تأكد من أن العناصر في القائمة أفقية */
+    padding: 0; /* إزالة الحشو الافتراضي للقائمة */
+    margin: 0; /* إزالة الهامش الافتراضي */
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #a1f244; /* اللون الرابط */
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    padding: 10px 20px;
+    font-weight: 1;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    background-color: transparent;
+}
+
+/* تأثير عند التمرير فوق الرابط */
+.navbar a:hover {
+    color: #fff;
+    background-color: #74e63c; /* تغيير اللون عند التمرير */
+}
+
+
+
+
+    /* الأقسام */
+    .section {
+        font-size: 1rem;
+        padding: 10px;
+        text-align: center;
+        background-color: #F4F4F4; /* اللون الخلفي */
+        margin: 5px 10px;
+        border-radius: 8px;
+    }
+    
+    .section h2 {
+        position: relative;
+        display: inline-block;
+        padding-bottom: 100px;
+        transition: color 0.3s ease;
+    }
+    
+    .section h2::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: #74e63c; /* اللون المميز */
+        bottom: 0;
+        left: 0;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform 0.3s ease-out;
+    }
+    
+    .section h2:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+    
+    .section h2:hover {
+        color: #74e63c; /* تغيير اللون عند التمرير */
+    }
+    
+    /* خدمات */
+    .services .services-grid {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin: 10px;
+        margin-top: 1px;
+    }
+    
+    .service-card {
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 15px;
+        width: 100%;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        text-align: center;
+margin-bottom: 15px;
+    }
+    
+    .service-card:hover {
+        transform: translateY(-25px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* تأثير الظل عند التمرير */
+    }
+    
+    .service-card h3 {
+        margin-bottom: 1px;
+    }
+    
+    .service-card p {
+        font-size: 1.2rem;
+        margin-top: 1;
+        margin-bottom: 10px;
+    }
+    
+    .service-card img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+    
+    /* About Section */
+    .about {
+        text-align: center;
+        padding: 20px;
+        font-size: 1.3rem;
+        background-color: #f4f4f4;
+        margin: 10px ;
+        border: 10px solid #66ff33; /* إضافة إطار خارجي */
+    }
+    
+    .about h2 {
+        font-size: 2rem;
+        color: #333;
+        margin-top: 0;
+        padding: 1px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    
+    .about p {
+        font-size: 1.3rem;
+        color: #333;
+        margin-top: 2px;
+        padding: 0px;
+        border-radius: 15px;
+    }
+    
+    .about p1 {
+        font-size: 1.4rem;
+        color: #333;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+    
+    /* Map Section */
+    #map {
+        width: 80%;
+        border-radius: 15px;
+        display: block;
+        padding: 10px 0px;
+        margin: auto;
+        margin-top: 1px; /* مسافة بين العنوان والخريطة */
+        margin-bottom: 10px; 
+        border: 1px solid #66ff33; /* إضافة إطار خارجي */
+    }
+    
+    /* Impressum */
+    #impressum {
+        padding: 5px 150px;
+        text-align: center; /* توسيط النص */
+        margin: 10px auto; /* توسيط العنصر بشكل عام */
+        max-width: 80%; /* تحديد عرض العنصر */
+        font-size: 1rem;
+        color: #333; /* الحفاظ على اللون الأساسي */
+        background-color: #f4f4f4; /* خلفية خفيفة */
+        border-radius: 10px; /* حدود دائرية خفيفة */
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* تأثير الظل */
+    }
+    
+    /* الفوتر */
+    .footer {
+        background-color: #2C3E50; /* اللون الخلفي */
+        color: #fff;
+        text-align: center;
+        padding: 1px;
+        font-size: 1rem;
+    }
+}
+
+/* للأجهزة اللوحية من 600px إلى 768px */
 @media (max-width: 768px) {
     .header h1 {
-        font-size: 3rem; /* تصغير الحجم */
-        margin: 0; /* إزالة الهوامش */
-        text-align: center; /* توسيط العنوان */
-        width: 100%; /* جعل العنوان يمتد بشكل كامل */
+        font-size: 3rem;
     }
 
     .header .tagline {
-        font-size: 1.1rem; /* تصغير الحجم */
-        margin: 0; /* إزالة الهوامش */
-        text-align: center; /* توسيط النص */
-        width: 100%; /* جعل النص يمتد بشكل كامل */
-    }
-
-    .sticky-header {
-        display: flex;
-        flex-direction: column; /* تغيير الاتجاه ليصبح عمودي عند الشاشات الصغيرة */
-        justify-content: center;
-        align-items: center;
-        padding: 10px 15px; /* تقليل الحشوات لتقليص المساحة */
-        background: #1A452F; /* اللون الخلفي */
-        position: sticky;
-        top: 0;
-        z-index: 1000;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* تأثير الظل */
-        gap: 5px; /* مسافة بين النصوص */
-        white-space: nowrap; /* منع تكسير السطر للنصوص */
-        max-height: 100px; /* تحديد أقصى ارتفاع للشريط */
-        overflow: hidden; /* منع التمرير الجانبي */
-        width: 100%; /* الشريط يجب أن يكون بعرض كامل الصفحة */
-    }
-
-    .sticky-header .contact-info {
-        display: flex;
-        padding: 5px;
-        gap: 10px; /* تقليل المسافة بين العناصر */
-        text-align: center; /* توسيط النصوص */
-        flex: 1; /* جعل العناصر تستفيد من المساحة بالتساوي */
-        justify-content: space-evenly; /* توزيع المحتوى بالتساوي */
-        max-width: 100%; /* استخدام المساحة بالكامل */
-    }
-
-    .sticky-header .contact-info p {
-        margin: 0;
-        font-size: 1rem; /* تصغير حجم الخط ليكون ملائم */
-        word-wrap: break-word; /* السماح بتقسيم الكلمات لتجنب التمرير الجانبي */
-    }
-
-    .sticky-header .contact-info a {
-        color: #d5dbdb; /* اللون الرابط */
-        font-size: 1rem; /* تصغير حجم الخط */
-        text-align: center;
-    }
-
-    .sticky-header strong {
-        color: #74e63c; /* اللون المميز */
-    }
-}
-    .contact-info {
-        text-align: center;
-        gap: 10px; /* تقليل المسافة بين النصوص */
-        width: 100%; /* جعل العنصر يغطي العرض بالكامل */
+        font-size: 1.1rem;
     }
 
     .navbar ul {
-        gap: 15px; /* تقليل المسافة بين الروابط */
-        flex-direction: row; /* الحفاظ على ترتيب العناصر في صف */
-        align-items: center;
-        width: 100%; /* استخدام العرض الكامل */
-        justify-content: space-evenly; /* توزيع الروابط بشكل متساوٍ */
-        padding: 0; /* إزالة التباعد الداخلي */
-    }
-
-    .navbar li {
-        list-style: none;
-    }
-
-    .footer {
-        font-size: 0.9rem; /* تقليل حجم الخط */
-        width: 100%; /* تغطية العرض بالكامل */
-        text-align: center; /* توسيط النص */
-        padding: 20px 0; /* إضافة تباعد داخلي */
-    }
-
-    .header-images {
-        margin: 0; /* إزالة الهوامش */
-        width: 100%; /* جعل الصور تمتد بعرض الشاشة */
-        display: flex;
-        justify-content: center; /* توسيط الصور */
-    }
-
-    .header-image {
-        max-width: 100px; /* تصغير الصور */
-        max-height: 120px; /* تصغير الصور */
-        margin: 5px;
+        flex-direction: column;
     }
 
     .service-card {
-        flex: 1 1 45%; /* جعل الكروت تستفيد من العرض بشكل أفضل */
-        margin: 10px 0; /* إضافة هامش صغير بين الكروت */
-        box-sizing: border-box;
-        text-align: center; /* توسيط النص داخل الكروت */
+        width: 45%;
     }
 
-    .service-cards-container {
-        display: flex;
-        justify-content: space-evenly; /* توزيع الكروت بشكل متساوٍ */
-        flex-wrap: wrap; /* السماح بالتفاف الكروت في حالة ضيق المساحة */
-        width: 100%; /* استخدام العرض بالكامل */
-    }
-
-    .map-section h2 {
-        font-size: 1.4rem; /* تقليل حجم العنوان */
-        margin: 10px 0; /* إضافة هوامش حول العنوان */
-        text-align: center; /* توسيط النص */
+    .header-images {
+        flex-direction: column;
     }
 
     #map {
-        height: 200px; /* تصغير حجم الخريطة */
-        width: 100%; /* جعل الخريطة تستفيد من العرض بالكامل */
+        width: 100%;
+    }
+}
+
+/* للشاشات المتوسطة من 769px إلى 1024px */
+@media (max-width: 1024px) {
+    .header h1 {
+        font-size: 4rem;
     }
 
-    .impressum-text {
-        white-space: normal; /* جعل النص يتنقل بشكل طبيعي دون الحاجة للتمرير الطويل */
-        word-wrap: break-word;
-        width: 100%; /* تغطية العرض بالكامل */
-        padding: 10px; /* إضافة تباعد داخلي لتحسين الشكل */
+    .navbar ul {
+        gap: 20px;
     }
+
+    .service-card {
+        width: 45%;
+    }
+
+    .header-images {
+        flex-direction: row;
+    }
+}
+
+/* للشاشات الكبيرة من 1025px إلى 1440px */
+@media (max-width: 1440px) {
+    .header h1 {
+        font-size: 4.5rem;
+    }
+
+    .navbar ul {
+        gap: 25px;
+    }
+
+    .service-card {
+        width: 30%;
+    }
+}
+
+
+@media (max-width: 480px) {
+    
+  /* الشريط العلوي المثبت */
+.sticky-header {
+    display: flex;
+    align-items: center; /* محاذاة النصوص بشكل عمودي */
+    padding: 15px 15px;
+    background: #1A452F; /* اللون الخلفي */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* تأثير الظل */
+    gap: 50px; /* مسافة بين النصوص */
+    white-space: nowrap; /* منع التفاف النصوص */
+    width: 100vw; /* الشريط يغطي كامل عرض الشاشة */
+    overflow: auto; /* السماح بالتمرير إذا تجاوز النص العرض */
+    padding-top:25px;
+}
+
+/* قسم معلومات الاتصال */
+.sticky-header .contact-info {
+    display: flex;
+    flex-wrap: nowrap; /* التأكد من أن النصوص لا تنتقل إلى سطر جديد */
+    gap: 1px; /* تقليل المسافات بين النصوص */
+    text-align: center; /* توسيط النصوص */
+    justify-content: center; /* محاذاة النصوص أفقياً */
+    flex: 1; /* جعل النصوص تأخذ المساحة المتاحة بالتساوي */
+    overflow: hidden; /* منع النصوص من تجاوز الحاوية */
+}
+
+/* النصوص داخل قسم الاتصال */
+.sticky-header .contact-info p {
+    font-size: 0.8rem;
+    text-align: center;
+    margin: 0; /* إزالة المسافات الإضافية */
+}
+
+/* الروابط داخل قسم الاتصال */
+.sticky-header .contact-info a {
+    color: #d5dbdb; /* لون الرابط */
+    font-size: 0.7rem;
+    text-align: center;
+    text-decoration: none; /* إزالة التسطير */
+    overflow-wrap: break-word; /* كسر الكلمات الطويلة إذا لزم الأمر */
+}
+
+/* اللون المميز */
+.sticky-header strong {
+    color: #74e63c; /* اللون المميز */
+}
+
+    
+/* رأس الصفحة */
+.header {
+    background: #1A252F; /* اللون الخلفي */
+   
+    padding: 1px 1px;
+    padding-bottom: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* تأثير الظل */
+    margin: auto; /* إزالة الهوامش الجانبية */
+    width: 100vw; /* ملء الشاشة بالكامل */
+    
+}
+
+.header h1 {
+    font-size: 3rem;
+    margin: 1px;
+    color: #69e42c; /* اللون العنوان */
+    letter-spacing: 2px;
+}
+
+.header .tagline {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    margin-top: 10px;
+    font-weight: 300;
+    color: #74e63c; /* اللون المميز */
+}
+
+/* صور الرأس */
+.header-images {
+    
+    justify-content: center;
+    gap: 5px;
+    padding: 0px;
+    
+   margin: 0 auto;
+   
+}
+
+.header-image {
+    width: 85px;
+    height: 130px;
+    
+    border-radius: 15px;
+   
+    max-width: 80%;
+  
+    
+}
+
+.header-image:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); /* تأثير الظل عند التمرير */
+}
+
+
+/* تخصيص شريط التنقل */
+.navbar {
+    
+justify-content: center; /* توزيع الأزرار بشكل متساوي عبر العرض */
+    
+white-space: nowrap; /* يجعل الشريط على سطر واحد */
+    
+margin: 1px 0px;
+padding: 1px 1px;
+}
+
+/* تخصيص القائمة داخل شريط التنقل */
+.navbar ul {
+    
+    
+    margin: 1px 1px;
+    
+    gap: 1px; /* المسافة بين الأزرار */
+    flex-direction: row;
+}
+
+/* تخصيص الأزرار */
+.navbar a {
+    text-decoration: none;
+    color: #83e019; /* اللون الرابط */
+    padding: 10px 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    background-color: #333;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    position: relative;
+}
+
+
+    /* تحسين البطاقات لتناسب الشاشات الصغيرة */
+    .service-card {
+        width: 100%;  /* جعل البطاقات تأخذ عرض الشاشة بالكامل */
+        box-sizing: border-box;  /* التأكد من حساب الحشوات والحدود ضمن العرض */
+        padding: 5px;
+        margin-bottom: 1px;  /* مسافة بين البطاقات */
+    }
+
+    .services-grid {
+        display: flex;
+        flex-wrap: wrap;  /* السماح للبطاقات بالانتقال إلى الأسطر التالية */
+        justify-content: center;  /* توسيط البطاقات داخل الحاوية */
+        gap: 15px;  /* المسافة بين البطاقات */
+        padding: 5px 5px;  /* تأكد من أن الحاوية لا تحتوي على مسافات زائدة */
+    }
+
+    .service-card h3 {
+        font-size: 1.2rem;  /* تقليل حجم النص */
+        margin-bottom: 10px;  /* مسافة أسفل العنوان */
+    }
+    
+
+    .service-card p {
+        font-size: 1rem;  /* حجم الخط أصغر */
+        margin-top: 10px;  /* مسافة بين الوصف والصورة */
+    }
+
+    .service-card img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;  /* ضمان أن الصور لا تتجاوز الحدود */
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    /* تحسين النصوص داخل الأقسام */
+    .section {
+        font-size: 1rem;
+        padding: 20px;  /* زيادة الحشوة حول النص */
+        margin: 0px 0;  /* تقليل المسافات بين الأقسام */
+    }
+
+    .section h2 {
+        font-size: 1.5rem;  /* زيادة حجم العنوان في الشاشات الصغيرة */
+        padding-bottom: 10px; /* تقليل الحشو أسفل العنوان */
+        margin-top: 1px;
+        margin-bottom: 1px;
+        color:#333;
+    }
+
+    .section p {
+        font-size: 1rem;
+        line-height: 1.5; /* تحسين تباعد الأسطر */
+    }
+
+
+
+    /* About Section */
+.about {
+    text-align: center;
+    padding: 10x 10px;
+    font-size: 1.3rem;
+    background-color: #f4f4f4;
+    margin: 1px 5px;
+    margin-top: 0px;
+    border: 3px solid #66ff33; /* إضافة إطار خارجي */
+}
+
+.about h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-top: 0;
+    padding: 0px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.about p {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 1px;
+    padding: 0px;
+    border-radius: 15px;
+}
+
+.about p1 {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 20px;
+    padding: 0%;
+}
+/* Impressum */
+#impressum {
+    padding: 1px 40px;
+    text-align: center; /* توسيط النص */
+    margin: 1px auto; /* توسيط العنصر بشكل عام */
+    max-width: 80%; /* تحديد عرض العنصر */
+    font-size: 0.7rem;
+    color: #333; /* الحفاظ على اللون الأساسي */
+    background-color: #f4f4f4; /* خلفية خفيفة */
+    border-radius: 10px; /* حدود دائرية خفيفة */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* تأثير الظل */
+}
+
+/* الفوتر */
+.footer {
+    background-color: #2C3E50; /* اللون الخلفي */
+    color: #fff;
+    text-align: center;
+    padding: 1px;
+    font-size: 0.6rem;
+}
+}
+
 
