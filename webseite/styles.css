@@ -184,7 +184,7 @@ body {
     font-size: 1.3rem;
     margin-top: 1;
     margin-bottom: 10px;
-    color:#07543b;
+    color:#0c6170;
 }
 
 .service-card img {
@@ -469,7 +469,7 @@ body {
     
     .about h2 {
         font-size: 1.9rem;
-        color: #07543B;
+        color: #0c6170;
         margin-top: 1px;
         padding: 1px;
         text-transform: uppercase;
@@ -478,7 +478,7 @@ body {
     
     .about p {
         font-size: 1.3rem;
-        color: #07432cc4;
+        color: #0c6170c4;
         margin-top:0;
         padding: 0px;
         border-radius: 15px;
@@ -623,7 +623,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 0.9rem;
     margin-top: 12px;
-    color: #07543b; /* اللون المميز */
+    color: #0c6170; /* اللون المميز */
 }
 
 /* صور الرأس */
@@ -714,7 +714,7 @@ body {
 
 .about h2 {
     font-size: 2rem;
-    color: #07543B;
+    color: #0c6170;
     margin-top: 0;
     padding: 0px;
     text-transform: uppercase;
@@ -723,7 +723,7 @@ body {
 
 .about p {
     font-size: 1.5rem;
-    color: #07432C;
+    color: #0c6170;
     margin-top: 1px;
     padding: 0px;
     border-radius: 15px;
@@ -1070,7 +1070,7 @@ body {
       font-size: 0.7rem;
       margin-top: 10px;
       font-weight: 300;
-      color: #07543B; /* اللون المميز */
+      color: #0c6170; /* اللون المميز */
   }
   
   /* صور الرأس */
@@ -1177,7 +1177,7 @@ body {
   
   .about h2 {
       font-size: 2rem;
-      color: #07543B;
+      color: #0c6170;
       margin-top: 0;
       padding: 0px;
       text-transform: uppercase;
@@ -1186,7 +1186,7 @@ body {
   
   .about p {
       font-size: 1.2rem;
-      color: #07432C;
+      color: #0c6170;
       margin-top: 1px;
       padding: 0px;
       border-radius: 15px;
@@ -1216,7 +1216,7 @@ body {
       margin: 1px 1px; /* توسيط العنصر بشكل عام */
       max-width: 100%; /* تحديد عرض العنصر */
       font-size: 0.7rem;
-      color: #07543B; /* الحفاظ على اللون الأساسي */
+      color: #0c6170; /* الحفاظ على اللون الأساسي */
       background-color: #f4f4f4; /* خلفية خفيفة */
       border-radius: 10px; /* حدود دائرية خفيفة */
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* تأثير الظل */
@@ -1299,7 +1299,7 @@ body {
     font-size: 1.1rem;
     margin-top: 10px;
     font-weight: 300;
-    color: #07543B; /* اللون المميز */
+    color: #0c6170; /* اللون المميز */
 }
 
 /* صور الرأس */
@@ -1400,7 +1400,7 @@ body {
 
 .about h2 {
     font-size: 2rem;
-    color: #07543B;
+    color: #0c6170;
     margin-top: 0;
     padding: 0px;
     text-transform: uppercase;
@@ -1409,7 +1409,7 @@ body {
 
 .about p {
     font-size: 1.5rem;
-    color: #07543B;
+    color: #0c6170;
     margin-top: 1px;
     padding: 0px;
     border-radius: 15px;
@@ -1417,7 +1417,7 @@ body {
 
 .about p1 {
     font-size: 1rem;
-    color: #07543B;
+    color: #0c6170;
     margin-bottom: 20px;
     padding: 0%;
 }
