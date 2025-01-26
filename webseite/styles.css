@@ -14,7 +14,7 @@ body {
     justify-content: space-between; /* توزيع النصوص بالتساوي */
     align-items: center; /* محاذاة النصوص بشكل عمودي */
     padding: 2px 2px;
-    background: #4a8670; /* اللون الخلفي */
+    background: #0c6170; /* اللون الخلفي */
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -50,12 +50,12 @@ body {
 }
 
 .sticky-header strong {
-    color: #f49728; /* اللون المميز */
+    color: #37beb0; /* اللون المميز */
 }
 
 /* رأس الصفحة */
 .header {
-    background: #b1d8b7; /* اللون الخلفي */
+    background: #a4e5e0; /* اللون الخلفي */
     text-align: center;
     padding: 20px 15px;
     padding-bottom: 50px;
@@ -69,7 +69,7 @@ body {
 .header h1 {
     font-size:5rem;
     margin: 1px;
-    color: #f49728; /* اللون العنوان */
+    color: #ff9936; /* اللون العنوان */
     letter-spacing: 2px;
     text-decoration-line: underline;
     
@@ -80,7 +80,7 @@ body {
     font-size: 1.8rem;
     margin-top: 10px;
     font-weight: 300;
-    color: #4a8670; /* اللون المميز */
+    color: #0c6170; /* اللون المميز */
     font-weight:bold;
 }
 
@@ -113,14 +113,14 @@ body {
     font-size: 1.5rem;
     padding: 10px;
     text-align: center;
-    background-color: #b1d8b7; /* اللون الخلفي */
+    background-color: #a4e5e0; /* اللون الخلفي */
     margin: 1px 0;
     border-radius: 8px;
 }
 
 .section h2 {
     font-size:2rem;
-    color:#F49728;
+    color:#37beb0;
     position: relative;
     display: inline-block;
     padding-bottom: 0;
@@ -174,9 +174,9 @@ body {
 }
 
 .service-card h3 {
-    font-size:1.9rem;
+    font-size:1.6rem;
     margin-bottom: 1px;
-    color: #f49728;
+    color: #37beb0;
     text-decoration-line: underline;
 }
 
@@ -200,12 +200,12 @@ body {
     padding: 18px 15px;
     background-color: #fbf9f4;
     margin: 2px 2px;
-    border: 10px solid #F49728; /* إضافة إطار خارجي */
+    border: 10px solid #37beb0; /* إضافة إطار خارجي */
 }
 
 .about h2 {
     font-size: 2rem;
-    color: #07543B;
+    color: #0c6170;
     margin-top: 0;
     padding: 1px;
     text-transform: uppercase;
@@ -215,7 +215,7 @@ body {
 
 .about p {
     font-size: 1.8rem;
-    color: #07432C;
+    color: #0c6170;
     margin-top: 1px;
     padding: 1px;
     border-radius: 15px;
@@ -223,7 +223,7 @@ body {
 
 .about p1 {
     font-size: 1.5rem;
-    color: #07543C;
+    color: #0c6170;
     text-align:center;
    
 }
@@ -237,7 +237,7 @@ body {
     margin: auto;
     margin-top: 1px; /* مسافة بين العنوان والخريطة */
     margin-bottom: 20px; 
-    border: 2px solid #4a8670; /* إضافة إطار خارجي */
+    border: 2px solid #0c6170; /* إضافة إطار خارجي */
 }
 
  #impressum {
@@ -246,7 +246,7 @@ body {
       margin: 10px auto; /* توسيط العنصر بشكل عام */
       max-width: 100%; /* تحديد عرض العنصر */
       font-size: 0.9rem;
-      color: #07543C; /* الحفاظ على اللون الأساسي */
+      color: #0c6170; /* الحفاظ على اللون الأساسي */
       background-color: #f4f4f4; /* خلفية خفيفة */
       border-radius: 0px; /* حدود دائرية خفيفة */
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* تأثير الظل */
@@ -282,7 +282,7 @@ body {
     justify-content: space-between; /* توزيع النصوص بالتساوي */
     align-items: center; /* محاذاة النصوص بشكل عمودي */
     padding: 2px 2px;
-    background: #4a8670; /* اللون الخلفي */
+    background: #0c6170; /* اللون الخلفي */
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -316,13 +316,13 @@ body {
 }
 
 .sticky-header strong {
-    color: #f49728; /* اللون المميز */
+    color: #37beb0; /* اللون المميز */
 }
 
 
     /* رأس الصفحة */
     .header {
-        background: #b1d8b7; /* اللون الخلفي */
+        background: #a4e5e0; /* اللون الخلفي */
         text-align: center;
         padding: 5px;
         padding-bottom: 50px;
@@ -335,7 +335,7 @@ body {
     .header h1 {
         font-size: 3rem;
         margin: 1px;
-        color: #f49728; /* اللون العنوان */
+        color: #ff9936; /* اللون العنوان */
         letter-spacing: 2px;
     }
     
@@ -344,7 +344,7 @@ body {
         font-size: 1.1rem;
         margin-top: 10px;
         font-weight: 300;
-        color: #4a8670; /* اللون المميز */
+        color: #0c6170; /* اللون المميز */
     }
     
 
@@ -382,7 +382,7 @@ body {
         font-size: 1rem;
         padding: 0.9px;
         text-align: center;
-        background-color: #b1d8b7; /* اللون الخلفي */
+        background-color: #a4e5e0; /* اللون الخلفي */
         margin:1px 1px;
         border-radius: 8px;
     }
@@ -464,7 +464,7 @@ body {
         padding: 20px;
         background-color: #f4f4f4;
         margin: 1px;
-        border: 4px solid #F49728; /* إضافة إطار خارجي */
+        border: 4px solid #37beb0; /* إضافة إطار خارجي */
     }
     
     .about h2 {
@@ -486,7 +486,7 @@ body {
     
     .about p1 {
         font-size: 1rem;
-        color: #07543C;
+        color: #0c6170;
         margin-bottom: 10px;
         padding: 0;
     }
@@ -500,7 +500,7 @@ body {
         margin: auto;
         margin-top: 1px; /* مسافة بين العنوان والخريطة */
         margin-bottom: 20px; 
-        border: 1px solid #4a8670; /* إضافة إطار خارجي */
+        border: 1px solid #0c6170; /* إضافة إطار خارجي */
     }
     
     /* Impressum */
@@ -510,7 +510,7 @@ body {
         margin: 2px 1px; /* توسيط العنصر بشكل عام */
         max-width: 100%; /* تحديد عرض العنصر */
         font-size: 0.3rem;
-        color: #07543C; /* الحفاظ على اللون الأساسي */
+        color: #0c6170; /* الحفاظ على اللون الأساسي */
         background-color: #f4f4f4; /* خلفية خفيفة */
         border-radius: 10px; /* حدود دائرية خفيفة */
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* تأثير الظل */
@@ -563,7 +563,7 @@ body {
       padding-right:1px;
       padding-bottom:10px;
       margin: 0; /* إزالة الحواف الخارجية */
-      background: #4a8670;
+      background: #0c6170;
       position: sticky;
       
       z-index: 1000;
@@ -595,14 +595,14 @@ body {
 }
 
 .sticky-header strong {
-    color: #f49728; /* اللون المميز */
+    color: #37beb0; /* اللون المميز */
 }
 
 
 
 /* رأس الصفحة */
 .header {
-    background: #b1d8b7; /* اللون الخلفي */
+    background: #a4e5e0; /* اللون الخلفي */
    
     padding: 1px 1px;
     padding-bottom: 20px;
@@ -615,7 +615,7 @@ body {
 .header h1 {
     font-size: 2.2rem;
     margin: 1px;
-    color: #f49728; /* اللون العنوان */
+    color: #ff9936; /* اللون العنوان */
     letter-spacing: 2px;
 }
 
@@ -693,7 +693,7 @@ body {
         padding-bottom: 5px; /* تقليل الحشو أسفل العنوان */
         margin-top: 1px;
         margin-bottom: 10px;
-        color:#F49728;
+        color:#37beb0;
     }
 
     .section p {
@@ -709,7 +709,7 @@ body {
     padding: 15px 15px;
     background-color: #fbf9f4;
     margin: 2px 2px;
-    border: 5px solid #F49728;
+    border: 5px solid #37beb0;
 }
 
 .about h2 {
@@ -731,7 +731,7 @@ body {
 
 .about p1 {
     font-size:1.2rem;
-    color: #07543C;
+    color: #0c6170;
     padding: 5px 5px;
 }
     /* Map Section */
@@ -743,7 +743,7 @@ body {
    
     margin-top: 1px; /* مسافة بين العنوان والخريطة */
     margin-bottom: 20px; 
-    border: 2px solid #4a8670; /* إضافة إطار خارجي */
+    border: 2px solid #0c6170; /* إضافة إطار خارجي */
 }
 
 /* Impressum */
@@ -753,7 +753,7 @@ body {
     margin: 1px auto; /* توسيط العنصر بشكل عام */
     max-width: 80%; /* تحديد عرض العنصر */
     font-size: 0.7rem;
-    color: #07543C; /* الحفاظ على اللون الأساسي */
+    color: #0c6170; /* الحفاظ على اللون الأساسي */
     background-color: #f4f4f4; /* خلفية خفيفة */
     border-radius: 10px; /* حدود دائرية خفيفة */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* تأثير الظل */
@@ -834,7 +834,7 @@ body {
   .header h1 {
       font-size: 2rem;
       margin: 1px;
-      color: #69e42c; /* اللون العنوان */
+      color: #ff9936; /* اللون العنوان */
       letter-spacing: 2px;
   }
   
@@ -1012,7 +1012,7 @@ body {
         padding-right:5px;
         padding-bottom:10px;
         margin: 0; /* إزالة الحواف الخارجية */
-        background: #4a8670;
+        background: #0c6170;
         position: sticky;
         
         z-index: 1000;
@@ -1044,13 +1044,13 @@ body {
     }
     
     .sticky-header strong {
-        color: #f49728; /* اللون المميز */
+        color: #37beb0; /* اللون المميز */
     }
     
   
   /* رأس الصفحة */
   .header {
-      background: #b1d8b7; /* اللون الخلفي */
+      background: #a4e5e0; /* اللون الخلفي */
       padding: 1px 1px;
       padding-bottom: 20px;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* تأثير الظل */
@@ -1061,7 +1061,7 @@ body {
   .header h1 {
       font-size: 2rem;
       margin: 1px;
-      color: #f49728; /* اللون العنوان */
+      color: #ff9936; /* اللون العنوان */
       letter-spacing: 2px;
   }
   
@@ -1152,7 +1152,7 @@ body {
       padding: 10px; /* تقليل الحشو أسفل العنوان */
       margin-top: 1px;
       margin-bottom: 1px;
-      color:#F49728;
+      color:#37beb0;
   }
 
   .section p {
@@ -1172,7 +1172,7 @@ body {
       background-color: #f4f4f4;
       margin: 1px 1px;
       margin-top: 0px;
-      border: 3px solid #F49728; /* إضافة إطار خارجي */
+      border: 3px solid #37beb0; /* إضافة إطار خارجي */
   }
   
   .about h2 {
@@ -1194,7 +1194,7 @@ body {
   
   .about p1 {
       font-size: 0.8rem;
-      color: #07543C;
+      color: #0c6170;
       margin-bottom: 20px;
       padding: 0%;
   }
@@ -1207,7 +1207,7 @@ body {
     margin: auto;
     margin-top: 1px; /* مسافة بين العنوان والخريطة */
     margin-bottom: 20px; 
-    border: 2px solid #4a8670; /* إضافة إطار خارجي */
+    border: 2px solid #0c6170; /* إضافة إطار خارجي */
 }
   /* Impressum */
   #impressum {
@@ -1240,7 +1240,7 @@ body {
       padding-right:5px;
       padding-bottom:10px;
       margin: auto; /* إزالة الحواف الخارجية */
-      background: #4a8670;
+      background: #0c6170;
       position: sticky;
       
       z-index: 1000;
@@ -1272,12 +1272,12 @@ body {
 }
 
 .sticky-header strong {
-    color: #f49728; /* اللون المميز */
+    color: #37beb0; /* اللون المميز */
 }
 
 /* رأس الصفحة */
 .header {
-    background: #b1d8b7; /* اللون الخلفي */
+    background: #a4e5e0; /* اللون الخلفي */
    
     padding: 10px 1px;
     padding-bottom: 20px;
@@ -1290,7 +1290,7 @@ body {
 .header h1 {
     font-size: 3rem;
     margin: 1px;
-    color: #f49728; /* اللون العنوان */
+    color: #ff9936; /* اللون العنوان */
     letter-spacing: 2px;
 }
 
@@ -1377,7 +1377,7 @@ body {
         padding-bottom: 10px; /* تقليل الحشو أسفل العنوان */
         margin-top: 1px;
         margin-bottom: 1px;
-        color:#F49728;
+        color:#37beb0;
     }
 
     .section p {
@@ -1395,7 +1395,7 @@ body {
     background-color: #f4f4f4;
     margin: 1px 5px;
     margin-top: 0px;
-    border: 3px solid #F49728; /* إضافة إطار خارجي */
+    border: 3px solid #37beb0; /* إضافة إطار خارجي */
 }
 
 .about h2 {
@@ -1428,7 +1428,7 @@ body {
     margin: 4px auto; /* توسيط العنصر بشكل عام */
     max-width: 80%; /* تحديد عرض العنصر */
     font-size: 0.5rem;
-    color: #07543C; /* الحفاظ على اللون الأساسي */
+    color: #0c6170; /* الحفاظ على اللون الأساسي */
     background-color: #f4f4f4; /* خلفية خفيفة */
     border-radius: 10px; /* حدود دائرية خفيفة */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* تأثير الظل */
