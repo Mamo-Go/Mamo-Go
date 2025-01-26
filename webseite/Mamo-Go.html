@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Willkommen bei Mamo-go</title>
     <style>
-        /* أنماط خلفية الفيديو */
+        /* القواعد الأساسية */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Sans-serif', Verdana;
+            color: #ff9936; /* لون النص */
+            text-align: center;
+        }
         .video-background {
             position: fixed;
             top: 0;
@@ -21,14 +28,6 @@
             object-fit: cover; /* لجعل الفيديو يغطي الصفحة بالكامل */
         }
 
-        /* أنماط النصوص والمكونات الأخرى */
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Sans-serif', Verdana;
-            color: #fff; /* تغيير لون النص ليظهر فوق الفيديو */
-            text-align: center;
-        }
         .container {
             background: rgba(0, 0, 0, 0.7); /* خلفية شفافة لتوضيح النص */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
@@ -37,7 +36,7 @@
             padding: 20px;
         }
         h1 {
-            color: #66ff33;
+            color: #17abc0;
             font-size: 2.5em;
             margin-top: 1px;
         }
@@ -52,11 +51,11 @@
         .button {
             display: inline-block;
             margin: 15px;
-            padding: 12px 25px;
-            font-size: 18px;
-            color: #fff;
+            padding: 16px 30px;
+            font-size: 20px;
+            color: #ff9936;
             text-decoration: none;
-            background-color: #006610;
+            background-color: #3d7b83;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             transition: all 0.3s ease;
@@ -72,7 +71,7 @@
             color: #ccc;
         }
         .footer a {
-            color: #66ff33;
+            color: #17abc0;
             text-decoration: none;
             font-weight: bold;
             transition: color 0.3s, text-decoration 0.3s;
@@ -82,8 +81,11 @@
             text-decoration: underline;
         }
 
-        /* دعم الشاشات الصغيرة */
+        /* الشاشات الصغيرة */
         @media (max-width: 480px) {
+            body {
+                font-size: 14px;
+            }
             .container {
                 margin: 20px;
                 padding: 15px;
@@ -91,18 +93,63 @@
             h1 {
                 font-size: 2em;
             }
-            p {
+            p, p1 {
                 font-size: 1.2em;
             }
-            p1 {
-                font-size: 1.1em;
-            }
             .button {
-                font-size: 16px;
-                padding: 10px 20px;
+                font-size: 18px;
+                padding: 15px 25px;
             }
             .footer {
                 font-size: 14px;
+            }
+        }
+
+        /* الشاشات المتوسطة */
+        @media (min-width: 481px) and (max-width: 768px) {
+            body {
+                font-size: 16px;
+            }
+            .container {
+                margin: 40px;
+                padding: 20px;
+            }
+            h1 {
+                font-size: 2.2em;
+            }
+            p, p1 {
+                font-size: 1.3em;
+            }
+            .button {
+                font-size: 20px;
+                padding: 18px 30px;
+            }
+            .footer {
+                font-size: 15px;
+            }
+        }
+
+        /* الشاشات الكبيرة */
+        @media (min-width: 769px) {
+            body {
+                font-size: 18px;
+            }
+            .container {
+                margin: 100px;
+                padding: 30px;
+            }
+            h1 {
+                font-size: 2.5em;
+            }
+            p, p1 {
+                font-size: 1.5em;
+            }
+            .button {
+                font-size: 22px;
+                padding: 20px 35px;
+            }
+            .footer {
+                font-size: 16px;
             }
         }
     </style>
