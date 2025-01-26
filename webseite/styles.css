@@ -1,13 +1,11 @@
 /* أسلوب الصفحة الرئيسي */
 body {
     font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 1px 1px;
+    padding: 1px 1px;
+    
     overflow-x: hidden; /* منع التمرير الجانبي */
     box-sizing: border-box;
-    background: linear-gradient(135deg, #2C5E50, #BDC3C9); /* اللون الخلفي */
-    color: #333;
-    font-size: 14px;
 }
 
 /* الشريط العلوي المثبت */
@@ -16,7 +14,7 @@ body {
     justify-content: space-between; /* توزيع النصوص بالتساوي */
     align-items: center; /* محاذاة النصوص بشكل عمودي */
     padding: 2px 2px;
-    background: #1A452F; /* اللون الخلفي */
+    background: #4a8670; /* اللون الخلفي */
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -24,62 +22,66 @@ body {
     gap: 1px; /* مسافة بين النصوص */
     white-space: nowrap; /* يجعل الشريط على سطر واحد */
     width: 100%; 
-      padding-top: 15px ; /* إزالة الحواف الداخلية */
+      padding-top: 25px ; /* إزالة الحواف الداخلية */
       padding-left:1px;
       padding-right:5px;
-      padding-bottom:20px;
+      padding-bottom:25px;
 }
 
 .sticky-header .contact-info {
     display: flex;
    
-    gap: 100px; /* مسافة بين النصوص */
+    gap: 80px; /* مسافة بين النصوص */
     text-align: justify; /* توسيط النصوص */
     flex: 1; /* جعل النصوص تأخذ مساحة متساوية */
     justify-content: center;
 }
 
 .sticky-header .contact-info p {
-    margin: 1px;
-    font-size: 1.3rem;
+    margin: 1.3px;
+    font-size: 1.5rem;
     word-wrap: break-word; /* منع تجاوز النصوص */
 }
 
 .sticky-header .contact-info a {
-    color: #d5dbdb; /* اللون الرابط */
+    color: #e9f4f0; /* اللون الرابط */
     font-size: 1.2rem;
     text-align: center;
 }
 
 .sticky-header strong {
-    color: #74e63c; /* اللون المميز */
+    color: #f49728; /* اللون المميز */
 }
 
 /* رأس الصفحة */
 .header {
-    background: #1A252F; /* اللون الخلفي */
+    background: #b1d8b7; /* اللون الخلفي */
     text-align: center;
     padding: 20px 15px;
     padding-bottom: 50px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* تأثير الظل */
-    margin: 0; /* إزالة الهوامش الجانبية */
+    margin: 4px 1px; /* إزالة الهوامش الجانبية */
     width: 100vw; /* ملء الشاشة بالكامل */
     box-sizing: border-box; /* التأكد من أن الحشوات محسوبة ضمن العرض */
+   
 }
 
 .header h1 {
     font-size:5rem;
     margin: 1px;
-    color: #74e63c; /* اللون العنوان */
+    color: #f49728; /* اللون العنوان */
     letter-spacing: 2px;
+    text-decoration-line: underline;
+    
 }
 
 .header .tagline {
     font-family: 'Roboto', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     margin-top: 10px;
     font-weight: 300;
-    color: #74e63c; /* اللون المميز */
+    color: #4a8670; /* اللون المميز */
+    font-weight:bold;
 }
 
 /* صور الرأس */
@@ -91,8 +93,8 @@ body {
 }
 
 .header-image {
-    width: 200px;
-    height: 300px;
+    width: 160px;
+    height: 200px;
     object-fit: cover;
     border-radius: 15px;
     transition: transform 0.3s ease;
@@ -111,17 +113,19 @@ body {
     font-size: 1.5rem;
     padding: 10px;
     text-align: center;
-    background-color: #F4F4F4; /* اللون الخلفي */
+    background-color: #b1d8b7; /* اللون الخلفي */
     margin: 1px 0;
     border-radius: 8px;
 }
 
 .section h2 {
     font-size:2rem;
+    color:#F49728;
     position: relative;
     display: inline-block;
     padding-bottom: 0;
     transition: color 0.3s ease;
+    text-decoration-line: underline;
 }
 
 .section h2::after {
@@ -129,7 +133,7 @@ body {
     position: absolute;
     width: 100%;
     height: 3px;
-    background-color: #74e63c; /* اللون المميز */
+    background-color: #b6ac34; /* اللون المميز */
     bottom: 0;
     left: 0;
     transform: scaleX(0);
@@ -143,7 +147,7 @@ body {
 }
 
 .section h2:hover {
-    color: #74e63c; /* تغيير اللون عند التمرير */
+    color: #b6ac34; /* تغيير اللون عند التمرير */
 }
 
 /* خدمات */
@@ -170,13 +174,17 @@ body {
 }
 
 .service-card h3 {
+    font-size:1.9rem;
     margin-bottom: 1px;
+    color: #f49728;
+    text-decoration-line: underline;
 }
 
 .service-card p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-top: 1;
     margin-bottom: 10px;
+    color:#07543b;
 }
 
 .service-card img {
@@ -189,33 +197,33 @@ body {
 /* About Section */
 .about {
     text-align: center;
-    padding: 40px 10px;
-    font-size: 1.9rem;
-    background-color: #f4f4f4;
-    margin: 10px 10px ;
-    border: 10px solid #66ff33; /* إضافة إطار خارجي */
+    padding: 18px 15px;
+    background-color: #fbf9f4;
+    margin: 2px 2px;
+    border: 10px solid #F49728; /* إضافة إطار خارجي */
 }
 
 .about h2 {
     font-size: 2rem;
-    color: #333;
+    color: #07543B;
     margin-top: 0;
     padding: 1px;
     text-transform: uppercase;
     letter-spacing: 1px;
+    text-decoration-line: underline;
 }
 
 .about p {
-    font-size: 1.3rem;
-    color: #333;
-    margin-top: 2px;
-    padding: 0px;
+    font-size: 1.8rem;
+    color: #07432C;
+    margin-top: 1px;
+    padding: 1px;
     border-radius: 15px;
 }
 
 .about p1 {
-    font-size: 1.1rem;
-    color: #333;
+    font-size: 1.5rem;
+    color: #07543C;
     text-align:center;
    
 }
@@ -229,16 +237,16 @@ body {
     margin: auto;
     margin-top: 1px; /* مسافة بين العنوان والخريطة */
     margin-bottom: 20px; 
-    border: 1px solid #66ff33; /* إضافة إطار خارجي */
+    border: 2px solid #4a8670; /* إضافة إطار خارجي */
 }
 
  #impressum {
-      padding: 1px 1px;
+      padding: 1px 100px;
       text-align: center; /* توسيط النص */
-      margin: 1px auto; /* توسيط العنصر بشكل عام */
+      margin: 10px auto; /* توسيط العنصر بشكل عام */
       max-width: 100%; /* تحديد عرض العنصر */
-      font-size: 0.7rem;
-      color: #333; /* الحفاظ على اللون الأساسي */
+      font-size: 0.9rem;
+      color: #07543C; /* الحفاظ على اللون الأساسي */
       background-color: #f4f4f4; /* خلفية خفيفة */
       border-radius: 0px; /* حدود دائرية خفيفة */
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* تأثير الظل */
@@ -263,9 +271,9 @@ body {
         padding: 0;
         box-sizing: border-box;
         background: linear-gradient(135deg, #2C5E50, #BDC3C9); /* اللون الخلفي */
-        color: #333;
+        color: #fff;
         font-size: 1.4rem;
-overflow-x: hidden
+        overflow-x: hidden
     }
     
  /* الشريط العلوي المثبت */
@@ -273,73 +281,70 @@ overflow-x: hidden
     display: flex;
     justify-content: space-between; /* توزيع النصوص بالتساوي */
     align-items: center; /* محاذاة النصوص بشكل عمودي */
-    padding: 20px 20px;
-    background: #1A452F; /* اللون الخلفي */
+    padding: 2px 2px;
+    background: #4a8670; /* اللون الخلفي */
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* تأثير الظل */
-   
+    box-shadow: 0 10px 20px rgb(79 200 57 / 10%); /* تأثير الظل */
+    gap: 1px; /* مسافة بين النصوص */
     white-space: nowrap; /* يجعل الشريط على سطر واحد */
-    width: 100%;
-    overflow: hidden; /* منع تجاوز المحتوى */
-    box-sizing: border-box; /* حصر الحشوات داخل الحاوية */
+    width: 100%; 
+      padding-top: 10px ; /* إزالة الحواف الداخلية */
+      padding-left:1px;
+      padding-right:5px;
+      padding-bottom:10px;
 }
-
 .sticky-header .contact-info {
     display: flex;
-    padding: 1px;
-    gap: 10px; /* تقليل المسافة بين النصوص */
+    gap: 15px; /* مسافة بين النصوص */
     text-align: justify; /* توسيط النصوص */
     flex: 1; /* جعل النصوص تأخذ مساحة متساوية */
     justify-content: center;
-    flex-wrap: nowrap; /* منع النصوص من الانتقال إلى سطر جديد */
-    overflow: hidden; /* إخفاء أي نصوص زائدة */
-    text-overflow: ellipsis; /* إظهار النقاط عند التجاوز */
-    white-space: nowrap; /* إبقاء النصوص على سطر واحد */
-    max-width: 100%; /* منع النصوص من تجاوز العرض */
 }
 
-.sticky-header .contact-info p,
+.sticky-header .contact-info p {
+    margin: 1.3px;
+    font-size: 0.6rem;
+    word-wrap: break-word; /* منع تجاوز النصوص */
+}
+
 .sticky-header .contact-info a {
-    margin: 0;
-    font-size: 0.7rem; /* تصغير النصوص */
-    overflow: hidden; /* إخفاء النصوص الزائدة */
-    text-overflow: ellipsis; /* إظهار النقاط الثلاث عند تجاوز النص */
-    white-space: nowrap; /* إبقاء النصوص على سطر واحد */
-    max-width: 100%; /* منع تجاوز النصوص لعرض الحاوية */
+    color: #e9f4f0; /* اللون الرابط */
+    font-size: 0.6rem;
+    text-align: center;
 }
 
 .sticky-header strong {
-    color: #74e63c; /* اللون المميز */
+    color: #f49728; /* اللون المميز */
 }
 
 
     /* رأس الصفحة */
     .header {
-        background: #1A252F; /* اللون الخلفي */
+        background: #b1d8b7; /* اللون الخلفي */
         text-align: center;
-        padding: 10px;
+        padding: 5px;
         padding-bottom: 50px;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* تأثير الظل */
-        margin: 0; /* إزالة الهوامش الجانبية */
+        margin: auto; /* إزالة الهوامش الجانبية */
         width: 100vw; /* ملء الشاشة بالكامل */
         box-sizing: border-box; /* التأكد من أن الحشوات محسوبة ضمن العرض */
     }
     
     .header h1 {
-        font-size: 5rem;
+        font-size: 3rem;
         margin: 1px;
-        color: #74e63c; /* اللون العنوان */
+        color: #f49728; /* اللون العنوان */
         letter-spacing: 2px;
     }
     
     .header .tagline {
         font-family: 'Roboto', sans-serif;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         margin-top: 10px;
         font-weight: 300;
-        color: #74e63c; /* اللون المميز */
+        color: #4a8670; /* اللون المميز */
     }
     
 
@@ -357,9 +362,9 @@ overflow-x: hidden
 
 /* الصورة الواحدة */
 .header-image {
-    width: 70px ; 
+    width: 75px ; 
     max-width: 100px; /* أقصى عرض للصورة */
-    height: 100px; /* جعل الارتفاع تلقائي بناءً على العرض */
+    height: 150px; /* جعل الارتفاع تلقائي بناءً على العرض */
     object-fit: cover; /* جعل الصورة تغطي المساحة المحددة دون تشويه */
     border-radius: 15px; /* زوايا مستديرة للصورة */
     transition: transform 0.3s ease;
@@ -375,9 +380,9 @@ overflow-x: hidden
     /* الأقسام */
     .section {
         font-size: 1rem;
-        padding: 1px;
+        padding: 0.9px;
         text-align: center;
-        background-color: #F4F4F4; /* اللون الخلفي */
+        background-color: #b1d8b7; /* اللون الخلفي */
         margin:1px 1px;
         border-radius: 8px;
     }
@@ -395,7 +400,7 @@ overflow-x: hidden
         position: absolute;
         width: 100%;
         height: 3px;
-        background-color: #74e63c; /* اللون المميز */
+        background-color: #fe9d0b; /* اللون المميز */
         bottom: 0;
         left: 0;
         transform: scaleX(0);
@@ -409,25 +414,26 @@ overflow-x: hidden
     }
     
     .section h2:hover {
-        color: #74e63c; /* تغيير اللون عند التمرير */
+        color: #fe9d0b; /* تغيير اللون عند التمرير */
     }
     
     /* خدمات */
-    .services .services-grid {
-        display: flex;
-        gap: 2px;
-        margin: 10px;
-        margin-top: 1px;
+  .services .services-grid {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin: auto;
+    
     }
     
     .service-card {
         background-color: #fff;
-        padding: 10px;
+        padding: 5px;
         border-radius: 15px;
         width: 100%;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         text-align: center;
-        margin-bottom: 15px;
+        margin-bottom: 1px;
     }
     
     .service-card:hover {
@@ -441,9 +447,7 @@ overflow-x: hidden
     }
     
     .service-card p {
-        font-size: 0.6rem;
-        margin-top: 1;
-        margin-bottom: 10px;
+        font-size: 0.8rem;
     }
     
     .service-card img {
@@ -459,13 +463,13 @@ overflow-x: hidden
         text-align: center;
         padding: 20px;
         background-color: #f4f4f4;
-        margin: 1px ;
-        border: 10px solid #66ff33; /* إضافة إطار خارجي */
+        margin: 1px;
+        border: 4px solid #F49728; /* إضافة إطار خارجي */
     }
     
     .about h2 {
         font-size: 1.9rem;
-        color: #333;
+        color: #07543B;
         margin-top: 1px;
         padding: 1px;
         text-transform: uppercase;
@@ -474,7 +478,7 @@ overflow-x: hidden
     
     .about p {
         font-size: 1.3rem;
-        color: #333;
+        color: #07432cc4;
         margin-top:0;
         padding: 0px;
         border-radius: 15px;
@@ -482,21 +486,21 @@ overflow-x: hidden
     
     .about p1 {
         font-size: 1rem;
-        color: #333;
+        color: #07543C;
         margin-bottom: 10px;
         padding: 0;
     }
     
     /* Map Section */
     #map {
-        width: 80%;
+        width: 70%;
         border-radius: 15px;
         display: block;
-        padding: 10px 0px;
+        padding: 10px 10px;
         margin: auto;
         margin-top: 1px; /* مسافة بين العنوان والخريطة */
-        margin-bottom: 10px; 
-        border: 1px solid #66ff33; /* إضافة إطار خارجي */
+        margin-bottom: 20px; 
+        border: 1px solid #4a8670; /* إضافة إطار خارجي */
     }
     
     /* Impressum */
@@ -505,8 +509,8 @@ overflow-x: hidden
         text-align: center; /* توسيط النص */
         margin: 2px 1px; /* توسيط العنصر بشكل عام */
         max-width: 100%; /* تحديد عرض العنصر */
-        font-size: 0.6rem;
-        color: #333; /* الحفاظ على اللون الأساسي */
+        font-size: 0.3rem;
+        color: #07543C; /* الحفاظ على اللون الأساسي */
         background-color: #f4f4f4; /* خلفية خفيفة */
         border-radius: 10px; /* حدود دائرية خفيفة */
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* تأثير الظل */
@@ -542,10 +546,8 @@ overflow-x: hidden
 /* للشاشات الكبيرة من 1025px إلى 1440px */
 @media (max-width: 1440px) {
     .header h1 {
-        font-size: 4rem;
+        font-size: 2.5rem;
     }
-
-   
 
     .service-card {
         width: 30%;
@@ -561,7 +563,7 @@ overflow-x: hidden
       padding-right:1px;
       padding-bottom:10px;
       margin: 0; /* إزالة الحواف الخارجية */
-      background: #1A452F;
+      background: #4a8670;
       position: sticky;
       
       z-index: 1000;
@@ -582,7 +584,7 @@ overflow-x: hidden
   }
   .sticky-header .contact-info p {
     margin: 1px;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     word-wrap: break-word; /* منع تجاوز النصوص */
 }
 
@@ -593,14 +595,14 @@ overflow-x: hidden
 }
 
 .sticky-header strong {
-    color: #74e63c; /* اللون المميز */
+    color: #f49728; /* اللون المميز */
 }
 
 
 
 /* رأس الصفحة */
 .header {
-    background: #1A252F; /* اللون الخلفي */
+    background: #b1d8b7; /* اللون الخلفي */
    
     padding: 1px 1px;
     padding-bottom: 20px;
@@ -613,7 +615,7 @@ overflow-x: hidden
 .header h1 {
     font-size: 2.2rem;
     margin: 1px;
-    color: #69e42c; /* اللون العنوان */
+    color: #f49728; /* اللون العنوان */
     letter-spacing: 2px;
 }
 
@@ -621,18 +623,18 @@ overflow-x: hidden
     font-family: 'Roboto', sans-serif;
     font-size: 0.9rem;
     margin-top: 12px;
-    color: #74e63c; /* اللون المميز */
+    color: #07543b; /* اللون المميز */
 }
 
 /* صور الرأس */
 .header-images {
-    
-    justify-content: center;
-    gap: 5px;
-    padding: 1px;
-    
-   margin: 0 auto;
-   
+  display: flex;
+    justify-content: center; /* توسيط الصور أفقياً */
+    gap: 2px; /* مسافة بين الصور */
+    margin: 1px auto; /* توسيط الحاوية */
+    padding: 0;
+    white-space: nowrap; /* منع الصور من الانتقال إلى سطر جديد */
+     width: 100%; /* جعل الحاوية تمتد حسب الشاشة */
 }
 
 .header-image {
@@ -649,10 +651,9 @@ overflow-x: hidden
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); /* تأثير الظل عند التمرير */
 }
 .section {
-        
-    padding: 10px 10px;  /* زيادة الحشوة حول النص */
-    margin: 1px 1px;  /* تقليل المسافات بين الأقسام */
-    gap: 0;
+        padding: 10px 10px;  /* زيادة الحشوة حول النص */
+        margin: 1px 1px;  /* تقليل المسافات بين الأقسام */
+        gap: 0;
 }
 
     /* تحسين البطاقات لتناسب الشاشات الصغيرة */
@@ -673,8 +674,6 @@ overflow-x: hidden
 
     .service-card h3 {
         font-size: 0.8rem;  /* تقليل حجم النص */
-       
-       
     }
 
 
@@ -694,11 +693,11 @@ overflow-x: hidden
         padding-bottom: 5px; /* تقليل الحشو أسفل العنوان */
         margin-top: 1px;
         margin-bottom: 10px;
-        color:#333;
+        color:#F49728;
     }
 
     .section p {
-        font-size: 0.9rem;
+        font-size: 1rem;
         line-height: 1.5; /* تحسين تباعد الأسطر */
     }
 
@@ -707,17 +706,15 @@ overflow-x: hidden
     /* About Section */
 .about {
     text-align: center;
-    padding: 10x 10px;
-    font-size: 1.3rem;
-    background-color: #f4f4f4;
-    margin: 1px 5px;
-    margin-top: 0px;
-    border: 3px solid #66ff33; /* إضافة إطار خارجي */
+    padding: 15px 15px;
+    background-color: #fbf9f4;
+    margin: 2px 2px;
+    border: 5px solid #F49728;
 }
 
 .about h2 {
     font-size: 2rem;
-    color: #333;
+    color: #07543B;
     margin-top: 0;
     padding: 0px;
     text-transform: uppercase;
@@ -726,18 +723,29 @@ overflow-x: hidden
 
 .about p {
     font-size: 1.5rem;
-    color: #333;
+    color: #07432C;
     margin-top: 1px;
     padding: 0px;
     border-radius: 15px;
 }
 
 .about p1 {
-    font-size: 1rem;
-    color: #333;
-    margin-bottom: 20px;
-    padding: 0%;
+    font-size:1.2rem;
+    color: #07543C;
+    padding: 5px 5px;
 }
+    /* Map Section */
+#map {
+    width: 70%;
+    border-radius: 15px;
+    
+    padding: 1px 10px;
+   
+    margin-top: 1px; /* مسافة بين العنوان والخريطة */
+    margin-bottom: 20px; 
+    border: 2px solid #4a8670; /* إضافة إطار خارجي */
+}
+
 /* Impressum */
 #impressum {
     padding: 1px 40px;
@@ -745,7 +753,7 @@ overflow-x: hidden
     margin: 1px auto; /* توسيط العنصر بشكل عام */
     max-width: 80%; /* تحديد عرض العنصر */
     font-size: 0.7rem;
-    color: #333; /* الحفاظ على اللون الأساسي */
+    color: #07543C; /* الحفاظ على اللون الأساسي */
     background-color: #f4f4f4; /* خلفية خفيفة */
     border-radius: 10px; /* حدود دائرية خفيفة */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* تأثير الظل */
@@ -1004,7 +1012,7 @@ overflow-x: hidden
         padding-right:5px;
         padding-bottom:10px;
         margin: 0; /* إزالة الحواف الخارجية */
-        background: #1A452F;
+        background: #4a8670;
         position: sticky;
         
         z-index: 1000;
@@ -1036,26 +1044,24 @@ overflow-x: hidden
     }
     
     .sticky-header strong {
-        color: #74e63c; /* اللون المميز */
+        color: #f49728; /* اللون المميز */
     }
     
   
   /* رأس الصفحة */
   .header {
-      background: #1A252F; /* اللون الخلفي */
-     
+      background: #b1d8b7; /* اللون الخلفي */
       padding: 1px 1px;
       padding-bottom: 20px;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* تأثير الظل */
-      margin: auto; /* إزالة الهوامش الجانبية */
-      width: 100vw; /* ملء الشاشة بالكامل */
-      
+      margin: 1px; /* إزالة الهوامش الجانبية */
+      /* width: 100vw; */ /* ملء الشاشة بالكامل */
   }
   
   .header h1 {
       font-size: 2rem;
       margin: 1px;
-      color: #69e42c; /* اللون العنوان */
+      color: #f49728; /* اللون العنوان */
       letter-spacing: 2px;
   }
   
@@ -1064,7 +1070,7 @@ overflow-x: hidden
       font-size: 0.7rem;
       margin-top: 10px;
       font-weight: 300;
-      color: #74e63c; /* اللون المميز */
+      color: #07543B; /* اللون المميز */
   }
   
   /* صور الرأس */
@@ -1138,7 +1144,7 @@ overflow-x: hidden
   .section {
       font-size: rem;
       padding: 10px;  /* زيادة الحشوة حول النص */
-      margin: 0px 0;  /* تقليل المسافات بين الأقسام */
+      /* margin: 0px 0; */  /* تقليل المسافات بين الأقسام */
   }
 
   .section h2 {
@@ -1146,7 +1152,7 @@ overflow-x: hidden
       padding: 10px; /* تقليل الحشو أسفل العنوان */
       margin-top: 1px;
       margin-bottom: 1px;
-      color:#333;
+      color:#F49728;
   }
 
   .section p {
@@ -1166,12 +1172,12 @@ overflow-x: hidden
       background-color: #f4f4f4;
       margin: 1px 1px;
       margin-top: 0px;
-      border: 3px solid #66ff33; /* إضافة إطار خارجي */
+      border: 3px solid #F49728; /* إضافة إطار خارجي */
   }
   
   .about h2 {
       font-size: 2rem;
-      color: #333;
+      color: #07543B;
       margin-top: 0;
       padding: 0px;
       text-transform: uppercase;
@@ -1180,7 +1186,7 @@ overflow-x: hidden
   
   .about p {
       font-size: 1.2rem;
-      color: #333;
+      color: #07432C;
       margin-top: 1px;
       padding: 0px;
       border-radius: 15px;
@@ -1188,10 +1194,21 @@ overflow-x: hidden
   
   .about p1 {
       font-size: 0.8rem;
-      color: #333;
+      color: #07543C;
       margin-bottom: 20px;
       padding: 0%;
   }
+      /* Map Section */
+#map {
+    width: 80%;
+    border-radius: 15px;
+    
+    padding: 20px 20px;
+    margin: auto;
+    margin-top: 1px; /* مسافة بين العنوان والخريطة */
+    margin-bottom: 20px; 
+    border: 2px solid #4a8670; /* إضافة إطار خارجي */
+}
   /* Impressum */
   #impressum {
       padding: 1px 1px;
@@ -1199,7 +1216,7 @@ overflow-x: hidden
       margin: 1px 1px; /* توسيط العنصر بشكل عام */
       max-width: 100%; /* تحديد عرض العنصر */
       font-size: 0.7rem;
-      color: #333; /* الحفاظ على اللون الأساسي */
+      color: #07543B; /* الحفاظ على اللون الأساسي */
       background-color: #f4f4f4; /* خلفية خفيفة */
       border-radius: 10px; /* حدود دائرية خفيفة */
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* تأثير الظل */
@@ -1222,8 +1239,8 @@ overflow-x: hidden
       padding-left:5px;
       padding-right:5px;
       padding-bottom:10px;
-      margin: 0; /* إزالة الحواف الخارجية */
-      background: #1A452F;
+      margin: auto; /* إزالة الحواف الخارجية */
+      background: #4a8670;
       position: sticky;
       
       z-index: 1000;
@@ -1234,25 +1251,38 @@ overflow-x: hidden
   }
 
   .sticky-header .contact-info {
-      width: 100%;
-      padding: 0;
-        gap: 70px; 
-    
-  }
+    display: flex;
+   
+    gap: 20px; /* مسافة بين النصوص */
+    text-align: justify; /* توسيط النصوص */
+    flex: 1; /* جعل النصوص تأخذ مساحة متساوية */
+    justify-content: center;
+}
 
-  .sticky-header .contact-item {
-      max-width: 100%;
-    
-  }
+.sticky-header .contact-info p {
+    margin: 1.3px;
+    font-size: 0.9rem;
+    word-wrap: break-word; /* منع تجاوز النصوص */
+}
+
+.sticky-header .contact-info a {
+    color: #e9f4f0; /* اللون الرابط */
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.sticky-header strong {
+    color: #f49728; /* اللون المميز */
+}
 
 /* رأس الصفحة */
 .header {
-    background: #1A252F; /* اللون الخلفي */
+    background: #b1d8b7; /* اللون الخلفي */
    
-    padding: 1px 1px;
+    padding: 10px 1px;
     padding-bottom: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* تأثير الظل */
-    margin: auto; /* إزالة الهوامش الجانبية */
+    margin: 2px 1px; /* إزالة الهوامش الجانبية */
     width: 100vw; /* ملء الشاشة بالكامل */
     
 }
@@ -1260,7 +1290,7 @@ overflow-x: hidden
 .header h1 {
     font-size: 3rem;
     margin: 1px;
-    color: #69e42c; /* اللون العنوان */
+    color: #f49728; /* اللون العنوان */
     letter-spacing: 2px;
 }
 
@@ -1269,7 +1299,7 @@ overflow-x: hidden
     font-size: 1.1rem;
     margin-top: 10px;
     font-weight: 300;
-    color: #74e63c; /* اللون المميز */
+    color: #07543B; /* اللون المميز */
 }
 
 /* صور الرأس */
@@ -1347,7 +1377,7 @@ overflow-x: hidden
         padding-bottom: 10px; /* تقليل الحشو أسفل العنوان */
         margin-top: 1px;
         margin-bottom: 1px;
-        color:#333;
+        color:#F49728;
     }
 
     .section p {
@@ -1365,12 +1395,12 @@ overflow-x: hidden
     background-color: #f4f4f4;
     margin: 1px 5px;
     margin-top: 0px;
-    border: 3px solid #66ff33; /* إضافة إطار خارجي */
+    border: 3px solid #F49728; /* إضافة إطار خارجي */
 }
 
 .about h2 {
     font-size: 2rem;
-    color: #333;
+    color: #07543B;
     margin-top: 0;
     padding: 0px;
     text-transform: uppercase;
@@ -1379,7 +1409,7 @@ overflow-x: hidden
 
 .about p {
     font-size: 1.5rem;
-    color: #333;
+    color: #07543B;
     margin-top: 1px;
     padding: 0px;
     border-radius: 15px;
@@ -1387,7 +1417,7 @@ overflow-x: hidden
 
 .about p1 {
     font-size: 1rem;
-    color: #333;
+    color: #07543B;
     margin-bottom: 20px;
     padding: 0%;
 }
@@ -1398,7 +1428,7 @@ overflow-x: hidden
     margin: 4px auto; /* توسيط العنصر بشكل عام */
     max-width: 80%; /* تحديد عرض العنصر */
     font-size: 0.5rem;
-    color: #333; /* الحفاظ على اللون الأساسي */
+    color: #07543C; /* الحفاظ على اللون الأساسي */
     background-color: #f4f4f4; /* خلفية خفيفة */
     border-radius: 10px; /* حدود دائرية خفيفة */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* تأثير الظل */
