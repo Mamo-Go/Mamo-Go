@@ -33,7 +33,7 @@ body {
 .sticky-header .contact-info {
     display: flex;
    
-    gap: 200px; /* مسافة بين النصوص */
+    gap: 100px; /* مسافة بين النصوص */
     text-align: justify; /* توسيط النصوص */
     flex: 1; /* جعل النصوص تأخذ مساحة متساوية */
     justify-content: center;
