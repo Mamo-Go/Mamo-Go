@@ -688,7 +688,7 @@ body {
   }
   .video-zwei {
     position: relative;
-    width: 60%;
+    width: 100%;
     height:200px; /* يمكنك تعديل الارتفاع */
     background-color: #fbf9f4af; /* لون الخلفية إذا كان هناك فراغات */
     display: flex;
