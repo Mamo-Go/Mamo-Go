@@ -8,6 +8,44 @@ body {
     box-sizing: border-box;
 }
 
+.video-banner {
+    position: relative;
+    width: 100%;
+    height: 150px; /* يمكنك ضبط الارتفاع حسب احتياجك */
+    overflow: hidden;
+    padding: 1px 1px;
+  }
+
+  .video-banner video {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 10px;
+    min-height: 100%;
+    object-fit: cover; /* لضمان ملء الفيديو */
+  }
+  .video-zwei {
+    position: relative;
+    width: 100%;
+    height:350px; /* يمكنك تعديل الارتفاع */
+    background-color: #fbf9f4af; /* لون الخلفية إذا كان هناك فراغات */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .video-zwei video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* يجعل الفيديو يملأ الحاوية مع الحفاظ على الأبعاد */
+   
+   
+  }
+
+
+
 /* الشريط العلوي المثبت */
 .sticky-header {
     display: flex;
@@ -113,14 +151,14 @@ body {
     font-size: 1.5rem;
     padding: 10px;
     text-align: center;
-    background-color: #3f807b82; /* اللون الخلفي */
+    background-color: #a4e5e0; /* اللون الخلفي */
     margin: 1px 0;
     border-radius: 8px;
 }
 
 .section h2 {
     font-size:2rem;
-    color:#fff;
+    color:#37beb0;
     position: relative;
     display: inline-block;
     padding-bottom: 0;
@@ -184,7 +222,7 @@ body {
     font-size: 1.3rem;
     margin-top: 1;
     margin-bottom: 10px;
-    color:#07543b;
+    color:#0c6170;
 }
 
 .service-card img {
@@ -245,12 +283,18 @@ body {
       text-align: center; /* توسيط النص */
       margin: 10px auto; /* توسيط العنصر بشكل عام */
       max-width: 100%; /* تحديد عرض العنصر */
-      font-size: 0.9rem;
+      font-size: 0.6rem;
       color: #0c6170; /* الحفاظ على اللون الأساسي */
       background-color: #f4f4f4; /* خلفية خفيفة */
       border-radius: 0px; /* حدود دائرية خفيفة */
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* تأثير الظل */
   }
+  
+  #impressum p.highlight {
+    font-size: 12px; /* تحديد حجم الخط */
+    font-weight: bold; /* يمكنك أيضًا إضافة سمك الخط إذا أردت */
+}
+  
   
 /* الفوتر */
 .footer {
@@ -276,6 +320,41 @@ body {
         overflow-x: hidden
     }
     
+    .video-banner {
+        position: relative;
+        width: 100%;
+        height: 150px; /* يمكنك ضبط الارتفاع حسب احتياجك */
+        overflow: hidden;
+        padding: 1px 1px;
+      }
+    
+      .video-banner video {
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 10px;
+        min-height: 100%;
+        object-fit: cover; /* لضمان ملء الفيديو */
+      }
+      .video-zwei {
+        position: relative;
+        width: 100%;
+        height:350px; /* يمكنك تعديل الارتفاع */
+        background-color: #fbf9f4af; /* لون الخلفية إذا كان هناك فراغات */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      }
+    
+      .video-zwei video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* يجعل الفيديو يملأ الحاوية مع الحفاظ على الأبعاد */
+       
+       
+      }
  /* الشريط العلوي المثبت */
 .sticky-header {
     display: flex;
@@ -382,7 +461,7 @@ body {
         font-size: 1rem;
         padding: 0.9px;
         text-align: center;
-        background-color: #a4e5e082; /* اللون الخلفي */
+        background-color: #a4e5e0; /* اللون الخلفي */
         margin:1px 1px;
         border-radius: 8px;
     }
@@ -469,7 +548,7 @@ body {
     
     .about h2 {
         font-size: 1.9rem;
-        color: #07543B;
+        color: #0c6170;
         margin-top: 1px;
         padding: 1px;
         text-transform: uppercase;
@@ -478,7 +557,7 @@ body {
     
     .about p {
         font-size: 1.3rem;
-        color: #07432cc4;
+        color: #0c6170c4;
         margin-top:0;
         padding: 0px;
         border-radius: 15px;
@@ -515,7 +594,10 @@ body {
         border-radius: 10px; /* حدود دائرية خفيفة */
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* تأثير الظل */
     }
-    
+    #impressum p.highlight {
+        font-size: 12px; /* تحديد حجم الخط */
+        font-weight: bold; /* يمكنك أيضًا إضافة سمك الخط إذا أردت */
+    }
     /* الفوتر */
     .footer {
         background-color: #2C3E50; /* اللون الخلفي */
@@ -543,20 +625,125 @@ body {
     }
 }
 
+.video-banner {
+    position: relative;
+    width: 100%;
+    height: 150px; /* يمكنك ضبط الارتفاع حسب احتياجك */
+    overflow: hidden;
+    padding: 1px 1px;
+  }
+
+  .video-banner video {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 10px;
+    min-height: 100%;
+    object-fit: cover; /* لضمان ملء الفيديو */
+  }
+  .video-zwei {
+    position: relative;
+    width: 100%;
+    height:350px; /* يمكنك تعديل الارتفاع */
+    background-color: #fbf9f4af; /* لون الخلفية إذا كان هناك فراغات */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .video-zwei video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* يجعل الفيديو يملأ الحاوية مع الحفاظ على الأبعاد */
+   
+   
+  }
 /* للشاشات الكبيرة من 1025px إلى 1440px */
 @media (max-width: 1440px) {
     .header h1 {
-        font-size: 3rem;
+        font-size: 5rem;
     }
 
     .service-card {
         width: 30%;
     }
 }
+.video-banner {
+    position: relative;
+    width: 100%;
+    height: 150px; /* يمكنك ضبط الارتفاع حسب احتياجك */
+    overflow: hidden;
+    padding: 1px 1px;
+  }
 
+  .video-banner video {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 10px;
+    min-height: 100%;
+    object-fit: cover; /* لضمان ملء الفيديو */
+  }
+  .video-zwei {
+    position: relative;
+    width: 100%;
+    height:250px; /* يمكنك تعديل الارتفاع */
+    background-color: #fbf9f4af; /* لون الخلفية إذا كان هناك فراغات */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .video-zwei video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* يجعل الفيديو يملأ الحاوية مع الحفاظ على الأبعاد */
+   
+   
+  }
 
 @media (min-width: 360px) and (max-width: 740px){
-  .sticky-header {
+    .video-banner {
+        position: relative;
+        width: 100%;
+        height: 110px; /* يمكنك ضبط الارتفاع حسب احتياجك */
+        overflow: hidden;
+        padding: 1px 1px;
+      }
+    
+      .video-banner video {
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 10px;
+        min-height: 100%;
+        object-fit: cover; /* لضمان ملء الفيديو */
+      }
+      .video-zwei {
+        position: relative;
+        width: 100%;
+        height:150px; /* يمكنك تعديل الارتفاع */
+        background-color: #fbf9f4af; /* لون الخلفية إذا كان هناك فراغات */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      }
+    
+      .video-zwei video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* يجعل الفيديو يملأ الحاوية مع الحفاظ على الأبعاد */
+       
+       
+      }
+  
+    .sticky-header {
      
       padding-top: 10px ; /* إزالة الحواف الداخلية */
       padding-left:1px;
@@ -623,7 +810,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 0.9rem;
     margin-top: 12px;
-    color: #07543b; /* اللون المميز */
+    color: #0c6170; /* اللون المميز */
 }
 
 /* صور الرأس */
@@ -651,7 +838,6 @@ body {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); /* تأثير الظل عند التمرير */
 }
 .section {
-        background-color: #a4e5e082; /* اللون الخلفي */
         padding: 10px 10px;  /* زيادة الحشوة حول النص */
         margin: 1px 1px;  /* تقليل المسافات بين الأقسام */
         gap: 0;
@@ -694,7 +880,7 @@ body {
         padding-bottom: 5px; /* تقليل الحشو أسفل العنوان */
         margin-top: 1px;
         margin-bottom: 10px;
-        color:#fff;
+        color:#37beb0;
     }
 
     .section p {
@@ -715,7 +901,7 @@ body {
 
 .about h2 {
     font-size: 2rem;
-    color: #0C6170;
+    color: #0c6170;
     margin-top: 0;
     padding: 0px;
     text-transform: uppercase;
@@ -724,7 +910,7 @@ body {
 
 .about p {
     font-size: 1.5rem;
-    color: #0C6170;
+    color: #0c6170;
     margin-top: 1px;
     padding: 0px;
     border-radius: 15px;
@@ -759,7 +945,10 @@ body {
     border-radius: 10px; /* حدود دائرية خفيفة */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* تأثير الظل */
 }
-
+#impressum p.highlight {
+    font-size: 12px; /* تحديد حجم الخط */
+    font-weight: bold; /* يمكنك أيضًا إضافة سمك الخط إذا أردت */
+}
 /* الفوتر */
 .footer {
     background-color: #2C3E50; /* اللون الخلفي */
@@ -777,6 +966,42 @@ body {
 
 
 @media (min-width: 414px) and (max-width: 896px) {
+    .video-banner {
+        position: relative;
+        width: 100%;
+        height: 150px; /* يمكنك ضبط الارتفاع حسب احتياجك */
+        overflow: hidden;
+        padding: 1px 1px;
+      }
+    
+      .video-banner video {
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 10px;
+        min-height: 100%;
+        object-fit: cover; /* لضمان ملء الفيديو */
+      }
+      .video-zwei {
+        position: relative;
+        width: 100%;
+        height:350px; /* يمكنك تعديل الارتفاع */
+        background-color: #fbf9f4af; /* لون الخلفية إذا كان هناك فراغات */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      }
+    
+      .video-zwei video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* يجعل الفيديو يملأ الحاوية مع الحفاظ على الأبعاد */
+       
+       
+      }
+    
     .sticky-header {
        
         padding-top: 10px ; /* إزالة الحواف الداخلية */
@@ -922,7 +1147,6 @@ body {
   
       /* تحسين النصوص داخل الأقسام */
       .section {
-        background-color: #a4e5e082; /* اللون الخلفي */
           font-size: rem;
           padding: 10px;  /* زيادة الحشوة حول النص */
           margin: 0px 0;  /* تقليل المسافات بين الأقسام */
@@ -989,6 +1213,10 @@ body {
       border-radius: 10px; /* حدود دائرية خفيفة */
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* تأثير الظل */
   }
+  #impressum p.highlight {
+    font-size: 12px; /* تحديد حجم الخط */
+    font-weight: bold; /* يمكنك أيضًا إضافة سمك الخط إذا أردت */
+}
   
   /* الفوتر */
   .footer {
@@ -1007,6 +1235,36 @@ body {
 
 
   @media (min-width: 375px) and (max-width: 896px) {
+    .video-banner {
+        position: relative;
+        width: 100%;
+        height: 130px; /* يمكنك ضبط الارتفاع حسب احتياجك */
+        overflow: hidden;
+        padding: 1px 1px;
+      }
+    
+      .video-banner video {
+        top:50%;
+        /* left: 100%; */
+        transform: translate(-50%, -50%);
+        object-fit: cover; /* لضمان ملء الفيديو */
+      }
+      .video-zwei {
+        position: relative;
+        width: 100%;
+        height:150px; /* يمكنك تعديل الارتفاع */
+        background-color: #fbf9f4af; /* لون الخلفية إذا كان هناك فراغات */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      }
+    
+      .video-zwei video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* يجعل الفيديو يملأ الحاوية مع الحفاظ على الأبعاد */
+      }
     .sticky-header {
        
         padding-top: 10px ; /* إزالة الحواف الداخلية */
@@ -1072,7 +1330,7 @@ body {
       font-size: 0.7rem;
       margin-top: 10px;
       font-weight: 300;
-      color: #07543B; /* اللون المميز */
+      color: #0c6170; /* اللون المميز */
   }
   
   /* صور الرأس */
@@ -1144,7 +1402,6 @@ body {
 
   /* تحسين النصوص داخل الأقسام */
   .section {
-    background-color: #a4e5e082; /* اللون الخلفي */
       font-size: rem;
       padding: 10px;  /* زيادة الحشوة حول النص */
       /* margin: 0px 0; */  /* تقليل المسافات بين الأقسام */
@@ -1155,7 +1412,7 @@ body {
       padding: 10px; /* تقليل الحشو أسفل العنوان */
       margin-top: 1px;
       margin-bottom: 1px;
-      color:#fff;
+      color:#37beb0;
   }
 
   .section p {
@@ -1180,7 +1437,7 @@ body {
   
   .about h2 {
       font-size: 2rem;
-      color: #0C6170;
+      color: #0c6170;
       margin-top: 0;
       padding: 0px;
       text-transform: uppercase;
@@ -1189,7 +1446,7 @@ body {
   
   .about p {
       font-size: 1.2rem;
-      color: #0C6170;
+      color: #0c6170;
       margin-top: 1px;
       padding: 0px;
       border-radius: 15px;
@@ -1219,12 +1476,15 @@ body {
       margin: 1px 1px; /* توسيط العنصر بشكل عام */
       max-width: 100%; /* تحديد عرض العنصر */
       font-size: 0.7rem;
-      color: #0C6170; /* الحفاظ على اللون الأساسي */
+      color: #0c6170; /* الحفاظ على اللون الأساسي */
       background-color: #f4f4f4; /* خلفية خفيفة */
       border-radius: 10px; /* حدود دائرية خفيفة */
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* تأثير الظل */
   }
-  
+  #impressum p.highlight {
+    font-size: 12px; /* تحديد حجم الخط */
+    font-weight: bold; /* يمكنك أيضًا إضافة سمك الخط إذا أردت */
+}
   /* الفوتر */
   .footer {
       background-color: #2C3E50; /* اللون الخلفي */
@@ -1236,7 +1496,42 @@ body {
   }
 
 @media (min-width: 481px) and (max-width: 768px) {
-  .sticky-header {
+    .video-banner {
+        position: relative;
+        width: 100%;
+        height: 150px; /* يمكنك ضبط الارتفاع حسب احتياجك */
+        overflow: hidden;
+        padding: 1px 1px;
+      }
+    
+      .video-banner video {
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 10px;
+        min-height: 100%;
+        object-fit: cover; /* لضمان ملء الفيديو */
+      }
+      .video-zwei {
+        position: relative;
+        width: 100%;
+        height:250px; /* يمكنك تعديل الارتفاع */
+        background-color: #fbf9f4af; /* لون الخلفية إذا كان هناك فراغات */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      }
+    
+      .video-zwei video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* يجعل الفيديو يملأ الحاوية مع الحفاظ على الأبعاد */
+       
+       
+      }
+    .sticky-header {
      
       padding-top: 11px ; /* إزالة الحواف الداخلية */
       padding-left:5px;
@@ -1302,7 +1597,7 @@ body {
     font-size: 1.1rem;
     margin-top: 10px;
     font-weight: 300;
-    color: #07543B; /* اللون المميز */
+    color: #0c6170; /* اللون المميز */
 }
 
 /* صور الرأس */
@@ -1370,7 +1665,6 @@ body {
 
     /* تحسين النصوص داخل الأقسام */
     .section {
-        background-color: #0d6f6782; /* اللون الخلفي */
         font-size: 1rem;
         padding: 10px 50px;  /* زيادة الحشوة حول النص */
         margin: 0;  /* تقليل المسافات بين الأقسام */
@@ -1381,7 +1675,7 @@ body {
         padding-bottom: 10px; /* تقليل الحشو أسفل العنوان */
         margin-top: 1px;
         margin-bottom: 1px;
-        color:#fff;
+        color:#37beb0;
     }
 
     .section p {
@@ -1397,14 +1691,14 @@ body {
     padding: 10x 10px;
     font-size: 1.3rem;
     background-color: #f4f4f4;
-    margin: 1px 5px;
+    margin: 1px 1px;
     margin-top: 0px;
     border: 3px solid #37beb0; /* إضافة إطار خارجي */
 }
 
 .about h2 {
     font-size: 2rem;
-    color: #0C6170;
+    color: #0c6170;
     margin-top: 0;
     padding: 0px;
     text-transform: uppercase;
@@ -1413,7 +1707,7 @@ body {
 
 .about p {
     font-size: 1.5rem;
-    color: #0C6170;
+    color: #0c6170;
     margin-top: 1px;
     padding: 0px;
     border-radius: 15px;
@@ -1421,7 +1715,7 @@ body {
 
 .about p1 {
     font-size: 1rem;
-    color: #0C6170;
+    color: #0c6170;
     margin-bottom: 20px;
     padding: 0%;
 }
@@ -1437,7 +1731,10 @@ body {
     border-radius: 10px; /* حدود دائرية خفيفة */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* تأثير الظل */
 }
-
+#impressum p.highlight {
+    font-size: 12px; /* تحديد حجم الخط */
+    font-weight: bold; /* يمكنك أيضًا إضافة سمك الخط إذا أردت */
+}
 /* الفوتر */
 .footer {
     background-color: #2C3E50; /* اللون الخلفي */
@@ -1449,7 +1746,42 @@ body {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    .sticky-header {
+    
+    .video-banner {
+        position: relative;
+        width: 100%;
+        height: 150px; /* يمكنك ضبط الارتفاع حسب احتياجك */
+        overflow: hidden;
+        padding: 1px 1px;
+      }
+    
+      .video-banner video {
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 10px;
+        min-height: 100%;
+        object-fit: cover; /* لضمان ملء الفيديو */
+      }
+      .video-zwei {
+        position: relative;
+        width: 100%;
+        height:350px; /* يمكنك تعديل الارتفاع */
+        background-color: #fbf9f4af; /* لون الخلفية إذا كان هناك فراغات */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      }
+    
+      .video-zwei video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* يجعل الفيديو يملأ الحاوية مع الحفاظ على الأبعاد */
+       
+       
+      }.sticky-header {
         display: flex;
         justify-content: space-between; /* توزيع النصوص بالتساوي */
         align-items: center; /* محاذاة النصوص بشكل عمودي */
@@ -1585,7 +1917,6 @@ body {
   
       /* تحسين النصوص داخل الأقسام */
       .section {
-        background-color: #a4e5e082; /* اللون الخلفي */
           font-size: 1rem;
           padding: 20px;  /* زيادة الحشوة حول النص */
           margin: 0px 0;  /* تقليل المسافات بين الأقسام */
@@ -1652,7 +1983,10 @@ body {
       border-radius: 0px; /* حدود دائرية خفيفة */
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* تأثير الظل */
   }
-  
+  #impressum p.highlight {
+    font-size: 12px; /* تحديد حجم الخط */
+    font-weight: bold; /* يمكنك أيضًا إضافة سمك الخط إذا أردت */
+}
   /* الفوتر */
   .footer {
       background-color: #2C3E50; /* اللون الخلفي */
