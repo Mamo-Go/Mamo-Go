@@ -1,10 +1,10 @@
 /* أسلوب الصفحة الرئيسي */
 body {
-   
-   margin: 1px 1px;
-   padding: 1px 1px;
-   overflow-x: hidden; /* منع التمرير الجانبي */
-   box-sizing: border-box;
+  font-family: 'Oxanium', sans-serif;
+  margin: 1px 1px;
+  padding: 1px 1px;
+  overflow-x: hidden; /* منع التمرير الجانبي */
+  box-sizing: border-box;
 }
 
 .video-banner {
@@ -81,6 +81,7 @@ body {
 }
 
 .sticky-header .contact-info a {
+     font-family: 'Glegoo', serif;
     color: #e9f4f0; /* اللون الرابط */
     font-size: 1.2rem;
     text-align: center;
@@ -92,6 +93,7 @@ body {
 
 /* رأس الصفحة */
 .header {
+
     background: #a4e5e0; /* اللون الخلفي */
     text-align: center;
     padding: 20px 15px;
@@ -104,16 +106,17 @@ body {
 }
 
 .header h1 {
+    
     font-size:5rem;
     margin: 1px;
     color: #b35cc2; /* اللون العنوان */
     letter-spacing: 2px;
     text-decoration-line: underline;
-    font-family: 'Rakkas';
+    
 }
 
 .header .tagline {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'font-family: 'Oxanium', sans-serif;', sans-serif;
     font-size: 1.8rem;
     margin-top: 10px;
     font-weight: 300;
@@ -210,14 +213,15 @@ body {
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* تأثير الظل عند التمرير */
 }
 
-.service-card h3 {
-    font-size:1.6rem;
-    margin-bottom: 1px;
-    color: #37beb0;
-    text-decoration-line: underline;
-}
+    .service-card h3 {
+        font-size: 1.6rem;
+        margin-bottom: 1px;
+        color: #B35CC2;
+        text-decoration-line: underline;
+    }
 
 .service-card p {
+    font-family: 'Glegoo', serif;
     font-size: 1.3rem;
     margin-top: 1;
     margin-bottom: 10px;
@@ -240,15 +244,15 @@ body {
     border: 10px solid #37beb0; /* إضافة إطار خارجي */
 }
 
-.about h2 {
-    font-size: 2rem;
-    color: #0c6170;
-    margin-top: 0;
-    padding: 1px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    text-decoration-line: underline;
-}
+    .about h2 {
+        font-size: 2rem;
+        color: #B35CC2;
+        margin-top: 0;
+        padding: 1px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-decoration-line: underline;
+    }
 
 .about p {
     font-size: 1.8rem;
@@ -258,12 +262,12 @@ body {
     border-radius: 15px;
 }
 
-.about p1 {
-    font-size: 1.5rem;
-    color: #0c6170;
-    text-align:center;
-   
-}
+    .about p1 {
+        font-family: 'Glegoo', serif;
+        font-size: 1.1rem;
+        color: #0c6170;
+        text-align: center;
+    }
 
 /* Map Section */
 #map {
@@ -290,6 +294,7 @@ body {
   }
   
   #impressum p.highlight {
+    font-family: 'Glegoo', serif;
     font-size: 12px; /* تحديد حجم الخط */
     font-weight: bold; /* يمكنك أيضًا إضافة سمك الخط إذا أردت */
 }
@@ -309,13 +314,13 @@ body {
 /* الشاشات الصغيرة جدًا (مثل الهواتف المحمولة الصغيرة) */
 @media (max-width: 480px) {
     body {
-        font-family: 'Roboto', sans-serif;
+      font-family: 'Oxanium', sans-serif;
         margin: 0;
         padding: 0;
         box-sizing: border-box;
         background: linear-gradient(135deg, #2C5E50, #BDC3C9); /* اللون الخلفي */
         color: #fff;
-        font-size: 1.4rem;
+      
         overflow-x: hidden
     }
     
@@ -375,7 +380,7 @@ body {
 }
 .sticky-header .contact-info {
     display: flex;
-    gap: 15px; /* مسافة بين النصوص */
+    gap: 5px; /* مسافة بين النصوص */
     text-align: justify; /* توسيط النصوص */
     flex: 1; /* جعل النصوص تأخذ مساحة متساوية */
     justify-content: center;
@@ -518,11 +523,12 @@ body {
         transform: translateY(-25px);
         box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* تأثير الظل عند التمرير */
     }
-    
-    .service-card h3 {
-        font-size: 0.8rem;
-        margin-bottom: 15px;
-    }
+
+        .service-card h3 {
+            color: #B35CC2;
+            font-size: 0.8rem;
+            margin-bottom: 15px;
+        }
     
     .service-card p {
         font-size: 0.8rem;
@@ -544,15 +550,15 @@ body {
         margin: 1px;
         border: 4px solid #37beb0; /* إضافة إطار خارجي */
     }
-    
-    .about h2 {
-        font-size: 1.9rem;
-        color: #0c6170;
-        margin-top: 1px;
-        padding: 1px;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-    }
+
+        .about h2 {
+            font-size: 1.9rem;
+            color: #B35CC2;
+            margin-top: 1px;
+            padding: 1px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
     
     .about p {
         font-size: 1.3rem;
@@ -563,7 +569,7 @@ body {
     }
     
     .about p1 {
-        font-size: 1rem;
+        font-size: 0.8rem;
         color: #0c6170;
         margin-bottom: 10px;
         padding: 0;
@@ -587,14 +593,14 @@ body {
         text-align: center; /* توسيط النص */
         margin: 2px 1px; /* توسيط العنصر بشكل عام */
         max-width: 100%; /* تحديد عرض العنصر */
-        font-size: 0.3rem;
+        font-size: 0.5rem;
         color: #0c6170; /* الحفاظ على اللون الأساسي */
         background-color: #f4f4f4; /* خلفية خفيفة */
         border-radius: 10px; /* حدود دائرية خفيفة */
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* تأثير الظل */
     }
     #impressum p.highlight {
-        font-size: 12px; /* تحديد حجم الخط */
+        font-size: 8px; /* تحديد حجم الخط */
         font-weight: bold; /* يمكنك أيضًا إضافة سمك الخط إذا أردت */
     }
     /* الفوتر */
@@ -661,9 +667,9 @@ body {
   }
 /* للشاشات الكبيرة من 1025px إلى 1440px */
 @media (max-width: 1440px) {
-    .header h1 {
+    .header h1 { 
         font-size: 4rem;
-        font-family: 'Rakkas';
+         font-family: 'Glegoo', serif;
     }
 
     .service-card {
@@ -745,8 +751,8 @@ body {
     .sticky-header {
      
       padding-top: 10px ; /* إزالة الحواف الداخلية */
-      padding-left:1px;
-      padding-right:1px;
+      padding-left:10px;
+      padding-right:10px;
       padding-bottom:10px;
       margin: 0; /* إزالة الحواف الخارجية */
       background: #0c6170;
@@ -839,36 +845,58 @@ body {
 .section {
         padding: 10px 10px;  /* زيادة الحشوة حول النص */
         margin: 1px 1px;  /* تقليل المسافات بين الأقسام */
-        gap: 0;
+        
 }
 
     /* تحسين البطاقات لتناسب الشاشات الصغيرة */
-    .service-card {
-        width: 100%;  /* جعل البطاقات تأخذ عرض الشاشة بالكامل */
-        box-sizing: border-box;  /* التأكد من حساب الحشوات والحدود ضمن العرض */
-        padding: 10px 1px;
-        margin-bottom: 1px 1px;  /* مسافة بين البطاقات */
-    }
-
+  .service-card {
+    background-color: #fff;
+    padding:4px;
+    border-radius: 15px;
+    width: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.services .services-grid {
+    display: flex;
+    justify-content: center;
+    gap:4px;
+    margin: 10px;
+    margin-top: 1px;
+}
     .services-grid {
         display: flex;
         justify-content: center;  /* توسيط البطاقات داخل الحاوية */
-        padding: 5px ;  /* تأكد من أن الحاوية لا تحتوي على مسافات زائدة */
+        padding: 1px 10px;  /* تأكد من أن الحاوية لا تحتوي على مسافات زائدة */
         height: inherit;
         width:initial;
+        
     }
 
     .service-card h3 {
-        font-size: 0.8rem;  /* تقليل حجم النص */
+        color: #B35CC2;
+        font-family: 'Glegoo', serif;
+        font-size: 0.8rem; /* زيادة حجم النص قليلاً ليظل مقروءاً */
+        text-align: center;
+        text-decoration: none;
+        word-wrap: break-word; /* التأكد من أن النص لا يتجاوز الإطار */
+        overflow: hidden; /* إخفاء أي محتوى يخرج عن الإطار */
+
+        line-height: 1.5; /* تحسين تباعد الأسطر لجعل النص أكثر وضوحاً */
+        height: auto; /* لضمان أن النص لا يخرج عن الإطار */
+        margin: 5; /* إزالة الهوامش الزائدة حول النص */
+        padding: 1px; /* إضافة حشو داخل النص */
     }
+
+
 
 
    
     .service-card img {
-        width: 250px;    
-        max-width: 110px;
-        height: 200px;  
-        border-radius: 8px;
+        width: 100px;    
+        max-width: 100px;
+        height: 180px;  
+        border-radius: 15px;
     }
 
     
@@ -883,8 +911,8 @@ body {
     }
 
     .section p {
-        font-size: 1rem;
-        line-height: 1.5; /* تحسين تباعد الأسطر */
+        font-size: 0.8rem;
+        line-height: 1.1rem; /* تحسين تباعد الأسطر */
     }
 
 
@@ -898,14 +926,14 @@ body {
     border: 5px solid #37beb0;
 }
 
-.about h2 {
-    font-size: 2rem;
-    color: #0c6170;
-    margin-top: 0;
-    padding: 0px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
+    .about h2 {
+        font-size: 2rem;
+        color: #B35CC2;
+        margin-top: 0;
+        padding: 0px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
 
 .about p {
     font-size: 1.5rem;
@@ -916,7 +944,7 @@ body {
 }
 
 .about p1 {
-    font-size:1.2rem;
+    font-size:0.9rem;
     color: #0c6170;
     padding: 5px 5px;
 }
@@ -1124,11 +1152,12 @@ body {
           flex-wrap:nowrap;
           
       }
-  
-      .service-card h3 {
-          font-size: 1rem;  /* تقليل حجم النص */
-          margin-bottom: 10px;  /* مسافة أسفل العنوان */
-      }
+
+    .service-card h3 {
+        color: #B35CC2;
+        font-size: 1rem; /* تقليل حجم النص */
+        margin-bottom: 10px; /* مسافة أسفل العنوان */
+    }
       
   
       .service-card p {
@@ -1176,15 +1205,15 @@ body {
       margin-top: 0px;
       border: 3px solid #66ff33; /* إضافة إطار خارجي */
   }
-  
-  .about h2 {
-      font-size: 2rem;
-      color: #333;
-      margin-top: 0;
-      padding: 0px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-  }
+
+    .about h2 {
+        font-size: 2rem;
+        color: #B35CC2;
+        margin-top: 0;
+        padding: 0px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
   
   .about p {
       font-size: 1.2rem;
@@ -1284,7 +1313,7 @@ body {
     .sticky-header .contact-info {
         display: flex;
        
-        gap: 30px; /* مسافة بين النصوص */
+        gap: 25px; /* مسافة بين النصوص */
         text-align: justify; /* توسيط النصوص */
         flex: 1; /* جعل النصوص تأخذ مساحة متساوية */
         justify-content: center;
@@ -1326,7 +1355,7 @@ body {
   
   .header .tagline {
       font-family: 'Roboto', sans-serif;
-      font-size: 0.7rem;
+      font-size: 1rem;
       margin-top: 10px;
       font-weight: 300;
       color: #0c6170; /* اللون المميز */
@@ -1383,10 +1412,11 @@ body {
       
   }
 
-  .service-card h3 {
-      font-size: 0.8rem;  /* تقليل حجم النص */
-      margin-bottom: 10px;  /* مسافة أسفل العنوان */
-  }
+    .service-card h3 {
+        color: #B35CC2;
+        font-size: 0.8rem; /* تقليل حجم النص */
+        margin-bottom: 10px; /* مسافة أسفل العنوان */
+    }
   
 
   
@@ -1433,15 +1463,15 @@ body {
       margin-top: 0px;
       border: 3px solid #37beb0; /* إضافة إطار خارجي */
   }
-  
-  .about h2 {
-      font-size: 2rem;
-      color: #0c6170;
-      margin-top: 0;
-      padding: 0px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-  }
+
+    .about h2 {
+        font-size: 2rem;
+        color: #B35CC2;
+        margin-top: 0;
+        padding: 0px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
   
   .about p {
       font-size: 1.2rem;
@@ -1481,7 +1511,7 @@ body {
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* تأثير الظل */
   }
   #impressum p.highlight {
-    font-size: 12px; /* تحديد حجم الخط */
+    font-size: 10px; /* تحديد حجم الخط */
     font-weight: bold; /* يمكنك أيضًا إضافة سمك الخط إذا أردت */
 }
   /* الفوتر */
@@ -1562,11 +1592,11 @@ body {
     word-wrap: break-word; /* منع تجاوز النصوص */
 }
 
-.sticky-header .contact-info a {
-    color: #e9f4f0; /* اللون الرابط */
-    font-size: 1rem;
-    text-align: center;
-}
+    .sticky-header .contact-info a {
+        color: #e9f4f0; /* اللون الرابط */
+        font-size: 0.8rem;
+        text-align: center;
+    }
 
 .sticky-header strong {
     color: #37beb0; /* اللون المميز */
@@ -1644,8 +1674,9 @@ body {
     }
 
     .service-card h3 {
-        font-size: 1.2rem;  /* تقليل حجم النص */
-        margin-bottom: 10px;  /* مسافة أسفل العنوان */
+        color: #B35CC2;
+        font-size: 1.2rem; /* تقليل حجم النص */
+        margin-bottom: 10px; /* مسافة أسفل العنوان */
     }
     
 
@@ -1695,14 +1726,14 @@ body {
     border: 3px solid #37beb0; /* إضافة إطار خارجي */
 }
 
-.about h2 {
-    font-size: 2rem;
-    color: #0c6170;
-    margin-top: 0;
-    padding: 0px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
+    .about h2 {
+        font-size: 2rem;
+        color: #B35CC2;
+        margin-top: 0;
+        padding: 0px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
 
 .about p {
     font-size: 1.5rem;
@@ -1731,7 +1762,7 @@ body {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* تأثير الظل */
 }
 #impressum p.highlight {
-    font-size: 12px; /* تحديد حجم الخط */
+    font-size: 9px; /* تحديد حجم الخط */
     font-weight: bold; /* يمكنك أيضًا إضافة سمك الخط إذا أردت */
 }
 /* الفوتر */
@@ -1894,11 +1925,12 @@ body {
           padding: 10px 10px;  /* تأكد من أن الحاوية لا تحتوي على مسافات زائدة */
           flex-wrap:nowrap;
       }
-  
-      .service-card h3 {
-          font-size: 1.2rem;  /* تقليل حجم النص */
-          margin-bottom: 10px;  /* مسافة أسفل العنوان */
-      }
+
+    .service-card h3 {
+        color: #B35CC2;
+        font-size: 1.2rem; /* تقليل حجم النص */
+        margin-bottom: 10px; /* مسافة أسفل العنوان */
+    }
       
   
       .service-card p {
@@ -1946,15 +1978,15 @@ body {
       margin-top: 1px;
       border: 3px solid #66ff33; /* إضافة إطار خارجي */
   }
-  
-  .about h2 {
-      font-size: 2rem;
-      color: #333;
-      margin-top: 0;
-      padding: 0px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-  }
+
+    .about h2 {
+        font-size: 2rem;
+        color: #B35CC2;
+        margin-top: 0;
+        padding: 0px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
   
   .about p {
       font-size: 1.5rem;
