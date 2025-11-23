@@ -178,5 +178,221 @@
             marker.bindPopup("<b>Hier Sind Wir :)</b>").openPopup();
         });
     </script>
+
+    
+<!-- BOT FINAL FLATICON START -->
+<style>
+#bot-container {
+  position: fixed;
+  bottom: 90px;
+  right: 30px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-family: Arial, sans-serif;
+}
+
+#bot-avatar {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  border-radius: 50%;
+  animation: float 2s infinite;
+  transition: transform 0.3s ease;
+  box-shadow: none;
+}
+
+#bot-avatar:hover {
+  transform: scale(1.2) rotate(5deg);
+  box-shadow: none;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+#bot-tooltip {
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+  background: #0c6170;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 15px;
+  opacity: 0;
+  pointer-events: none;
+  animation: fadeInTooltip 0.5s forwards;
+white-space: nowrap;
+
+}
+
+@keyframes fadeInTooltip {
+  0% { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+#bot-chat {
+  display: none;
+  position: absolute;
+  bottom: 90px;
+  right: 0;
+  width: 260px;
+  background: #fff;
+  border: 2px solid #444;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  padding: 12px;
+  animation: fadeIn 0.3s ease;
+}
+#bot-chat p { margin: 8px 0; font-size: 14px; color: #333; }
+#bot-chat button {
+  margin: 5px 5px 0 0;
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+#bot-chat button:hover {
+  background-color: #0056b3;
+}
+#bot-chat input {
+  width: calc(100% - 12px);
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+@keyframes fadeIn {
+  from {opacity:0; transform: translateY(10px);}
+  to {opacity:1; transform: translateY(0);}
+}
+</style>
+
+<div id="bot-container">
+  <!-- ضع أيقونة Flaticon هنا -->
+  <!-- <img id="bot-avatar" src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" alt="Bot"> -->
+    <img id="bot-avatar" src="https://cdn-icons-png.flaticon.com/512/1067/1067566.png" alt="Bot">
+
+
+  <div id="bot-tooltip">Hier klicken, um zu buchen!       </div>
+
+  <div id="bot-chat">
+    <p id="bot-message">Möchten Sie eine Fahrt buchen?</p>
+    <div id="bot-buttons">
+      <button onclick="botResponse('yes')">Ja</button>
+      <button onclick="botResponse('no')">Nein</button>
+    </div>
+  </div>
+</div>
+
+<script>
+let botState = 0;
+let booking = {};
+const avatar = document.getElementById('bot-avatar');
+const chat = document.getElementById('bot-chat');
+const tooltip = document.getElementById('bot-tooltip');
+
+window.addEventListener('DOMContentLoaded', () => {
+  tooltip.style.opacity = '1';
+  setTimeout(() => { tooltip.style.opacity = '0'; }, 3000);
+});
+
+avatar.onclick = function() {
+  chat.style.display = 'block';
+  tooltip.style.display = 'none';
+};
+
+function botResponse(answer) {
+  const msg = document.getElementById('bot-message');
+  const buttonsDiv = document.getElementById('bot-buttons');
+
+  if(botState === 0){
+    if(answer === 'no'){
+      msg.innerText = 'Danke! :)';
+      buttonsDiv.innerHTML = '<button onclick="closeBot()">Schließen</button>';
+    } else {
+      botState = 1;
+      msg.innerText = 'Von wo möchten Sie starten?';
+     buttonsDiv.innerHTML = `
+  <input list="from-list" id="from">
+  <datalist id="from-list">
+    <option value="Berlin, 10115, Hauptstraße 1">
+    <option value="Hamburg, 20095, Mönckebergstraße 2">
+    <option value="München, 80331, Marienplatz 1">
+    <option value="Sprockhövel, 45549, Hauptstraße 15">
+  </datalist>
+  <button onclick="nextStep()">Weiter</button>
+`;
+
+    }
+  }
+}
+
+function nextStep(){
+  const msg = document.getElementById('bot-message');
+  const buttonsDiv = document.getElementById('bot-buttons');
+
+  if(botState === 1){
+    const from = document.getElementById('from').value.trim();
+    if(!from) return;
+    booking.from = from;
+    botState = 2;
+    msg.innerText = 'Wohin möchten Sie fahren?';
+    buttonsDiv.innerHTML = `
+  <input list="to-list" id="to">
+  <datalist id="to-list">
+    <option value="Berlin, 10115, Hauptstraße 1">
+    <option value="Hamburg, 20095, Mönckebergstraße 2">
+    <option value="München, 80331, Marienplatz 1">
+    <option value="Sprockhövel, 45549, Hauptstraße 15">
+  </datalist>
+  <button onclick="nextStep()">Weiter</button>
+`;
+
+  } else if(botState === 2){
+    const to = document.getElementById('to').value.trim();
+    if(!to) return;
+    booking.to = to;
+    botState = 3;
+    msg.innerText = 'An welchem Tag?';
+    buttonsDiv.innerHTML = '<input type="date" id="day"><button onclick="nextStep()">Weiter</button>';
+  } else if(botState === 3){
+    const day = document.getElementById('day').value;
+    if(!day) return;
+    booking.day = day;
+    botState = 4;
+    msg.innerText = 'Um welche Uhrzeit?';
+    buttonsDiv.innerHTML = '<input type="time" id="time"><button onclick="nextStep()">Senden</button>';
+  } else if(botState === 4){
+    const time = document.getElementById('time').value;
+    if(!time) return;
+    booking.time = time;
+
+    const waNumber = '4917680065032';
+    const text = `Buchungsanfrage:\nVon: ${booking.from}\nNach: ${booking.to}\nDatum: ${booking.day}\nUhrzeit: ${booking.time}`;
+    window.open(`https://wa.me/${waNumber}?text=${encodeURIComponent(text)}`, '_blank');
+
+    msg.innerText = 'Danke, wir werden uns bei Ihnen melden!';
+    buttonsDiv.innerHTML = '<button onclick="closeBot()">Schließen</button>';
+  }
+}
+
+function closeBot(){
+  chat.style.display = 'none';
+  botState = 0;
+  document.getElementById('bot-message').innerText = 'Möchten Sie eine Fahrt buchen?';
+  document.getElementById('bot-buttons').innerHTML = '<button onclick="botResponse(\'yes\')">Ja</button><button onclick="botResponse(\'no\')">Nein</button>';
+}
+</script>
+<!-- BOT FINAL FLATICON END -->
+
+
 </body>
 </html>
+
