@@ -319,82 +319,121 @@ function botResponse(answer) {
     } else {
       botState = 1;
       msg.innerText = 'Von wo möchten Sie starten?';
-     buttonsDiv.innerHTML = `
-  <input list="from-list" id="from">
-  <datalist id="from-list">
-    <option value="Berlin, 10115, Hauptstraße 1">
-    <option value="Hamburg, 20095, Mönckebergstraße 2">
-    <option value="München, 80331, Marienplatz 1">
-    <option value="Sprockhövel, 45549, Hauptstraße 15">
-  </datalist>
-  <button onclick="nextStep()">Weiter</button>
-`;
-
+      buttonsDiv.innerHTML = `
+        <input id="from" type="text" placeholder="Stadt, PLZ, Straße, Nr.">
+        <button onclick="nextStep()">Weiter</button>
+      `;
     }
   }
 }
 
 function nextStep(){
   const msg = document.getElementById('bot-message');
-  const buttonsDiv = document.getElementById('bot-buttons');
+  const div = document.getElementById('bot-buttons');
 
   if(botState === 1){
     const from = document.getElementById('from').value.trim();
     if(!from) return;
     booking.from = from;
+
     botState = 2;
     msg.innerText = 'Wohin möchten Sie fahren?';
-    buttonsDiv.innerHTML = `
-  <input list="to-list" id="to">
-  <datalist id="to-list">
-    <option value="Berlin, 10115, Hauptstraße 1">
-    <option value="Hamburg, 20095, Mönckebergstraße 2">
-    <option value="München, 80331, Marienplatz 1">
-    <option value="Sprockhövel, 45549, Hauptstraße 15">
-  </datalist>
-  <button onclick="nextStep()">Weiter</button>
-`;
+    div.innerHTML = `
+      <input id="to" type="text" placeholder="Stadt, PLZ, Straße, Nr.">
+      <button onclick="nextStep()">Weiter</button>
+    `;
 
   } else if(botState === 2){
     const to = document.getElementById('to').value.trim();
     if(!to) return;
     booking.to = to;
+
     botState = 3;
     msg.innerText = 'An welchem Tag?';
-    buttonsDiv.innerHTML = '<input type="date" id="day"><button onclick="nextStep()">Weiter</button>';
+    div.innerHTML = `
+      <input type="date" id="day">
+      <button onclick="nextStep()">Weiter</button>
+    `;
+
   } else if(botState === 3){
     const day = document.getElementById('day').value;
-    if(!day) return;
+
+    // منع التاريخ القديم
+    const today = new Date().toISOString().split("T")[0];
+    if(!day || day < today){
+      alert("Bitte wählen Sie ein gültiges Datum.");
+      return;
+    }
+
     booking.day = day;
+
     botState = 4;
     msg.innerText = 'Um welche Uhrzeit?';
-    buttonsDiv.innerHTML = '<input type="time" id="time"><button onclick="nextStep()">Senden</button>';
+    div.innerHTML = `
+      <input type="time" id="time">
+      <button onclick="nextStep()">Weiter</button>
+    `;
+
   } else if(botState === 4){
     const time = document.getElementById('time').value;
     if(!time) return;
+
     booking.time = time;
 
-    const waNumber = '4917680065032';
-    const text = `Buchungsanfrage:\nVon: ${booking.from}\nNach: ${booking.to}\nDatum: ${booking.day}\nUhrzeit: ${booking.time}`;
-    window.open(`https://wa.me/${waNumber}?text=${encodeURIComponent(text)}`, '_blank');
+    botState = 5;
+    msg.innerText = 'Möchten Sie etwas hinzufügen?';
+    div.innerHTML = `
+      <input type="text" id="extra" placeholder="Optional...">
+      <button onclick="nextStep()">Weiter</button>
+    `;
 
-    msg.innerText = 'Danke, wir werden uns bei Ihnen melden!';
-    buttonsDiv.innerHTML = '<button onclick="closeBot()">Schließen</button>';
+  } else if(botState === 5){
+    const extra = document.getElementById('extra').value.trim();
+    booking.extra = extra;
+
+    botState = 6;
+    msg.innerText = 'Darf ich die Anfrage senden?';
+    div.innerHTML = `
+      <button onclick="sendBooking()">Ja</button>
+      <button onclick="closeBot()">Nein</button>
+    `;
   }
+}
+
+function sendBooking(){
+  const waNumber = '4917680065032';
+  const text = 
+`Buchungsanfrage:
+Von: ${booking.from}
+Nach: ${booking.to}
+Datum: ${booking.day}
+Uhrzeit: ${booking.time}
+Zusatz: ${booking.extra || "Keine"}`;
+
+  window.open(`https://wa.me/${waNumber}?text=${encodeURIComponent(text)}`, '_blank');
+
+  document.getElementById('bot-message').innerText = 'Danke, wir werden uns melden!';
+  document.getElementById('bot-buttons').innerHTML = '<button onclick="closeBot()">Schließen</button>';
 }
 
 function closeBot(){
   chat.style.display = 'none';
   botState = 0;
+  booking = {};
   document.getElementById('bot-message').innerText = 'Möchten Sie eine Fahrt buchen?';
-  document.getElementById('bot-buttons').innerHTML = '<button onclick="botResponse(\'yes\')">Ja</button><button onclick="botResponse(\'no\')">Nein</button>';
+  document.getElementById('bot-buttons').innerHTML = `
+    <button onclick="botResponse('yes')">Ja</button>
+    <button onclick="botResponse('no')">Nein</button>
+  `;
 }
 </script>
+
 <!-- BOT FINAL FLATICON END -->
 
 
 </body>
 </html>
+
 
 
 
