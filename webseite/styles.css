@@ -1211,10 +1211,7 @@ summary:focus-visible {
     gap: 5px;
   }
 
-  .topbar-inner a:last-child {
-    display: none;
-  }
-
+ 
   .header-inner {
     width: calc(100% - 32px);
     min-height: 72px;
