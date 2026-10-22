@@ -1,69 +1,43 @@
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Mamo-Go | Mietwagen, Flughafentransfer & Krankenfahrten in Sprockhövel</title>
-  <meta name="description" content="Mamo-Go Personenbeförderung in Sprockhövel: Ihr zuverlässiger Ansprechpartner für Funkmietwagen, Flughafentransfer und Krankenfahrten. Komfort & Sicherheit.">
+  <title>Mamo-Go | Mietwagen, Flughafentransfer & Krankenfahrten</title>
+  <meta name="description" content="Mamo-Go in Sprockhövel: Ihr Ansprechpartner für Mietwagen, Flughafentransfer und Krankenfahrten. Komfort, Pünktlichkeit und Sicherheit.">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://mamo-go.de">
+  <link rel="canonical" href="https://mamo-go.de/">
   <meta name="theme-color" content="#103b43">
 
   <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://googleapis.com">
-  <link rel="preconnect" href="https://gstatic.com" crossorigin>
-  <link href="https://googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="https://unpkg.com">
-  <script src="https://unpkg.com" defer></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
 
-  <!-- كود قانوني وآمن 100% يطابق ترخيص Personenbeförderung ويحذف كافة التحذيرات -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "Mamo-Go Personenbeförderung",
-    "description": "Ihr zuverlässiger Fahrdienst für Funkmietwagen, Flughafentransfer und Krankenfahrten in Sprockhövel und Umgebung.",
-    "url": "https://mamo-go.de",
+    "name": "Mamo-Go",
+    "description": "Mietwagenservice, Flughafentransfer und Krankenfahrten.",
+    "url": "https://mamo-go.de/",
     "telephone": "+4923249878582",
     "email": "info@mamo-go.de",
-    "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Hauptstraße 15",
       "postalCode": "45549",
       "addressLocality": "Sprockhövel",
       "addressCountry": "DE"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 51.3683,
-      "longitude": 7.2481
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday"
-      ],
-      "opens": "00:00",
-      "closes": "23:59"
-    },
-    "sameAs": [
-      "https://gelbeseiten.de",
-      "https://sellwerk.de",
-      "https://11880.com"
-    ]
+    }
   }
   </script>
 </head>
-
 
 <body>
   <a class="skip-link" href="#main">Zum Inhalt springen</a>
@@ -120,8 +94,7 @@
 
       <div class="hero-content">
         <p class="eyebrow"><span></span> Ihr Fahrdienst in Sprockhövel</p>
-        <!-- تحسين العنوان البرمجي الرئيسي H1 الجغرافي لجلب الباحثين عن الخدمة في منطقتك مباشرة دون التأثير على التصميم -->
-        <h1>Mamo-Go Personenbeförderung.<br><span>Sicher unterwegs in Sprockhövel.</span></h1>
+        <h1>Entspannt ankommen.<br><span>Sicher unterwegs.</span></h1>
         <p class="hero-description">
           Ob im Alltag, auf dem Weg zum Flughafen oder zu einem Arzttermin:
           Wir bringen Sie komfortabel und zuverlässig ans Ziel.
@@ -241,3 +214,466 @@
     <section class="video-section" aria-label="Mamo-Go in Bewegung">
       <video autoplay muted loop playsinline poster="v1.jpg"
              aria-label="Weitere Eindrücke von Mamo-Go">
+        <source src="v1.mp4" type="video/mp4">
+      </video>
+      <div class="video-shade"></div>
+      <div class="video-caption">
+        <p class="eyebrow">MAMO-GO</p>
+        <h2>Ihre Fahrt.<br>Unser Service.</h2>
+        <a class="button button-light" href="tel:+4923249878582">
+          Sprechen Sie mit uns <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section location-section" id="standort">
+      <div class="location-copy">
+        <p class="eyebrow">HIER FINDEN SIE UNS</p>
+        <h2>In Ihrer Nähe.<br><span>Für Sie unterwegs.</span></h2>
+        <p>Sie finden Mamo-Go in Sprockhövel. Kontaktieren Sie uns zur Planung Ihrer Fahrt.</p>
+        <div class="address-block">
+          <span class="address-icon" aria-hidden="true">⌖</span>
+          <div>
+            <strong>Mamo-Go</strong>
+            <p>Hauptstraße 15<br>45549 Sprockhövel, Deutschland</p>
+          </div>
+        </div>
+        <a class="text-link" href="https://www.google.com/maps?q=Mamo-Go%20Mietwagenanbieter"
+           target="_blank" rel="noopener noreferrer">
+          Route in Google Maps öffnen <span>↗</span>
+        </a>
+      </div>
+      <div id="map" class="map" role="application"
+           aria-label="Karte mit dem Standort von Mamo-Go"></div>
+    </section>
+
+    <section class="contact-section" id="kontakt">
+      <div class="contact-inner">
+        <div>
+          <p class="eyebrow">WIR SIND FÜR SIE DA</p>
+          <h2>Ihre nächste Fahrt<br><span>beginnt hier.</span></h2>
+          <p>Rufen Sie uns an oder senden Sie Ihre Fahrtanfrage über WhatsApp.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="button button-light" href="tel:+4923249878582">
+            ☎ &nbsp; 02324 9878582
+          </a>
+          <a class="button button-whatsapp" href="https://wa.me/491727844028"
+             target="_blank" rel="noopener noreferrer">
+            WhatsApp öffnen <span aria-hidden="true">↗</span>
+          </a>
+          <a class="contact-email" href="mailto:info@mamo-go.de">info@mamo-go.de</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main">
+      <a class="brand brand-footer" href="#start">
+        <span class="brand-mark">M</span>
+        <span class="brand-copy">
+          <strong>MAMO-GO</strong>
+          <small>FAHRTEN MIT KOMFORT</small>
+        </span>
+      </a>
+      <p>Komfort, Pünktlichkeit und Sicherheit.</p>
+      <div class="footer-links">
+        <a href="#leistungen">Leistungen</a>
+        <a href="#kontakt">Kontakt</a>
+        <a href="#impressum">Impressum</a>
+      </div>
+    </div>
+
+    
+<div class="impressum" id="impressum">
+  <details>
+    <summary>Impressum und rechtliche Angaben</summary>
+
+    <div class="impressum-content">
+      <h3>Angaben gemäß § 5 DDG</h3>
+
+      <p>
+        <strong>Mamo-Go</strong><br>
+        Hauptstraße 15<br>
+        45549 Sprockhövel<br>
+        Deutschland
+      </p>
+
+      <p>
+        <strong>Vertreten durch:</strong><br>
+        Souzan Mamo / Geschäftsführerin
+      </p>
+
+      <p>
+        <strong>Kontakt:</strong><br>
+        Telefon:
+        <a href="tel:+4923249878582">02324 9878582</a><br>
+        E-Mail:
+        <a href="mailto:info@mamo-go.de">info@mamo-go.de</a>
+      </p>
+
+      <p>
+        <strong>Umsatzsteuer-ID:</strong>
+        5323/5000/8199/NAST
+      </p>
+
+      <h3>Haftungsausschluss</h3>
+
+      <p>
+        Die Inhalte dieser Website wurden mit größter Sorgfalt erstellt.
+        Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte
+        wird jedoch keine Gewähr übernommen. Als Diensteanbieter sind wir
+        für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen
+        verantwortlich. Nach den gesetzlichen Vorschriften sind wir jedoch
+        nicht verpflichtet, übermittelte oder gespeicherte fremde
+        Informationen zu überwachen oder nach Umständen zu forschen,
+        die auf eine rechtswidrige Tätigkeit hinweisen.
+      </p>
+
+      <h3>Bild- und Videonachweise</h3>
+
+      <p>
+        Die auf dieser Website verwendeten Bilder stammen von Unsplash
+        und wurden von den folgenden Fotografen zur Verfügung gestellt:
+      </p>
+
+      <p>
+        Foto von Christina Telep (@tinatelep):
+        <a href="https://unsplash.com/de/fotos/schwarzes-toyota-autolenkrad-IS6CslWJrjY"
+           target="_blank" rel="noopener noreferrer">Christina Telep</a>
+      </p>
+
+      <p>
+        Foto von Bestami Sarıkaya (@bbestamis):
+        <a href="https://unsplash.com/de/fotos/schwarzes-toyota-autolenkrad-IS6CslWJrjY"
+           target="_blank" rel="noopener noreferrer">Bestami Sarıkaya</a>
+      </p>
+
+      <p>
+        Foto von Neerob Raihan (@neerob_raihan):
+        <a href="https://unsplash.com/de/fotos/nahaufnahme-eines-lenkrads-in-einem-fahrzeug-jifKBXXQBwU"
+           target="_blank" rel="noopener noreferrer">Neerob Raihan</a>
+      </p>
+
+      <p>
+        Foto von Neerob Raihan (@neerob_raihan):
+        <a href="https://unsplash.com/de/fotos/nahaufnahme-eines-lenkrads-in-einem-fahrzeug-jifKBXXQBwU"
+           target="_blank" rel="noopener noreferrer">Neerob Raihan</a>
+      </p>
+
+      <p>
+        Foto von Josue Isai Ramos Figueroa auf Unsplash:
+        <a href="https://unsplash.com/de/@jramos10?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash"
+           target="_blank" rel="noopener noreferrer">Josue Isai Ramos Figueroa</a>
+        auf
+        <a href="https://unsplash.com/de/fotos/fluggesellschaft-kurz-vor-der-landung-auf-der-rampe-n2NBgIx3A28?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash"
+           target="_blank" rel="noopener noreferrer">Unsplash</a>
+      </p>
+
+      <p>
+        Foto von why kei auf Unsplash.
+      </p>
+
+      <p>Die verwendeten Videos stammen von Pexels:</p>
+
+      <p>
+        Video von Rob Zohrab:
+        <a href="https://www.pexels.com/de-de/video/stadt-strasse-verkehr-nacht-9299638/"
+           target="_blank" rel="noopener noreferrer">Rob Zohrab</a>
+      </p>
+
+      <p>
+        Video von Tom Fisk:
+        <a href="https://www.pexels.com/de-de/video/verkehr-von-kraftfahrzeugen-in-sich-kreuzenden-strassen-3052883/"
+           target="_blank" rel="noopener noreferrer">Tom Fisk</a>
+      </p>
+    </div>
+  </details>
+</div>
+
+    <div class="footer-bottom">
+      <span>© <span id="current-year">2026</span> Mamo-Go. Alle Rechte vorbehalten.</span>
+      <a href="#start">Zurück nach oben ↑</a>
+    </div>
+  </footer>
+
+  <div class="booking-widget" id="booking-widget">
+    <div class="booking-chat" id="booking-chat" hidden>
+      <div class="chat-heading">
+        <div>
+          <strong>Fahrt anfragen</strong>
+          <span>Mamo-Go · WhatsApp</span>
+        </div>
+        <button class="chat-close" id="chat-close" type="button"
+                aria-label="Buchungsfenster schließen">×</button>
+      </div>
+      <div class="chat-body">
+        <p class="chat-intro" id="bot-message">Guten Tag! Möchten Sie eine Fahrt anfragen?</p>
+        <div class="chat-buttons" id="bot-buttons">
+          <button class="chat-choice" id="booking-start" type="button">Ja, Fahrt anfragen</button>
+          <button class="chat-choice chat-choice-secondary" id="booking-no" type="button">Nein, danke</button>
+        </div>
+      </div>
+      <p class="chat-footnote">Ihre Anfrage wird über WhatsApp an Mamo-Go übermittelt.</p>
+    </div>
+
+    <span class="booking-tooltip" id="booking-tooltip">Fahrt anfragen</span>
+    <button class="booking-avatar" id="booking-toggle" type="button"
+            aria-label="Fahrtanfrage öffnen" aria-expanded="false">
+      <img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" alt="">
+    </button>
+  </div>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+
+    // Standortkarte
+    const mapElement = document.getElementById("map");
+
+    if (mapElement && window.L) {
+      const location = [51.36852731894303, 7.2490055211784306];
+
+      const map = L.map(mapElement).setView(location, 15);
+
+      L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        maxZoom: 19
+      }).addTo(map);
+
+      L.marker(location)
+        .addTo(map)
+        .bindPopup("<b>Mamo-Go</b><br>Hauptstraße 15, 45549 Sprockhövel")
+        .openPopup();
+
+      setTimeout(function () {
+        map.invalidateSize();
+      }, 300);
+    } else {
+      console.error("Die Kartenbibliothek Leaflet wurde nicht geladen.");
+    }
+
+    // Aktuelles Jahr im Footer
+    const year = document.getElementById("current-year");
+    if (year) {
+      year.textContent = new Date().getFullYear();
+    }
+
+    // Buchungsfenster
+    const toggle = document.getElementById("booking-toggle");
+    const chat = document.getElementById("booking-chat");
+    const tooltip = document.getElementById("booking-tooltip");
+    const message = document.getElementById("bot-message");
+    const buttons = document.getElementById("bot-buttons");
+    const close = document.getElementById("chat-close");
+
+    if (!toggle || !chat || !tooltip || !message || !buttons || !close) {
+      return;
+    }
+
+    let step = 0;
+    const booking = {};
+
+    function showChat() {
+      chat.hidden = false;
+      toggle.setAttribute("aria-expanded", "true");
+      tooltip.hidden = true;
+    }
+
+    function resetChat() {
+      step = 0;
+      Object.keys(booking).forEach(function (key) {
+        delete booking[key];
+      });
+
+      message.textContent = "Guten Tag! Möchten Sie eine Fahrt anfragen?";
+      buttons.innerHTML = "";
+      addButton("Ja, Fahrt anfragen", startBooking);
+      addButton("Nein, danke", closeChat, true);
+    }
+
+    function closeChat() {
+      chat.hidden = true;
+      toggle.setAttribute("aria-expanded", "false");
+      resetChat();
+    }
+
+    function addButton(label, handler, secondary) {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "chat-choice" +
+        (secondary ? " chat-choice-secondary" : "");
+      button.textContent = label;
+      button.addEventListener("click", handler);
+      buttons.appendChild(button);
+    }
+
+    function startBooking() {
+      step = 1;
+      askText("Von wo möchten Sie starten?", "Stadt, PLZ, Straße, Nr.", "from");
+    }
+
+    function askText(prompt, placeholder, key) {
+      message.textContent = prompt;
+      buttons.innerHTML = "";
+
+      const input = document.createElement("input");
+      input.className = "chat-input";
+      input.type = "text";
+      input.placeholder = placeholder;
+      input.setAttribute("aria-label", prompt);
+      buttons.appendChild(input);
+
+      addButton("Weiter", function () {
+        const value = input.value.trim();
+
+        if (key !== "extra" && !value) {
+          input.setCustomValidity("Bitte füllen Sie dieses Feld aus.");
+          input.reportValidity();
+          return;
+        }
+
+        booking[key] = value;
+
+        if (key === "from") {
+          step = 2;
+          askText("Wohin möchten Sie fahren?", "Stadt, PLZ, Straße, Nr.", "to");
+        } else if (key === "to") {
+          step = 3;
+          askDate();
+        } else if (key === "extra") {
+          confirmBooking();
+        }
+      });
+    }
+
+    function localDateString() {
+      const now = new Date();
+      const year = now.getFullYear();
+      const month = String(now.getMonth() + 1).padStart(2, "0");
+      const day = String(now.getDate()).padStart(2, "0");
+      return year + "-" + month + "-" + day;
+    }
+
+    function askDate() {
+      message.textContent = "An welchem Tag möchten Sie fahren?";
+      buttons.innerHTML = "";
+
+      const input = document.createElement("input");
+      input.className = "chat-input";
+      input.type = "date";
+      input.min = localDateString();
+      input.setAttribute("aria-label", "Fahrtdatum");
+      buttons.appendChild(input);
+
+      addButton("Weiter", function () {
+        if (!input.value || input.value < localDateString()) {
+          input.setCustomValidity("Bitte wählen Sie ein gültiges Datum.");
+          input.reportValidity();
+          return;
+        }
+
+        booking.day = input.value;
+        askTime();
+      });
+    }
+
+    function askTime() {
+      message.textContent = "Um welche Uhrzeit möchten Sie fahren?";
+      buttons.innerHTML = "";
+
+      const input = document.createElement("input");
+      input.className = "chat-input";
+      input.type = "time";
+      input.setAttribute("aria-label", "Fahrzeit");
+      buttons.appendChild(input);
+
+      addButton("Weiter", function () {
+        if (!input.value) {
+          input.setCustomValidity("Bitte wählen Sie eine Uhrzeit.");
+          input.reportValidity();
+          return;
+        }
+
+        booking.time = input.value;
+        askText(
+          "Möchten Sie noch etwas hinzufügen?",
+          "Optional, z. B. Gepäck",
+          "extra"
+        );
+      });
+    }
+
+    function confirmBooking() {
+      message.textContent =
+        "Bitte prüfen Sie Ihre Angaben. Soll die Anfrage über WhatsApp gesendet werden?";
+      buttons.innerHTML = "";
+
+      const summary = document.createElement("p");
+      summary.className = "booking-summary";
+      summary.textContent =
+        "Von: " + booking.from + "\n" +
+        "Nach: " + booking.to + "\n" +
+        "Datum: " + booking.day + "\n" +
+        "Uhrzeit: " + booking.time + "\n" +
+        "Zusatz: " + (booking.extra || "Keine Angabe");
+
+      buttons.appendChild(summary);
+      addButton("Anfrage in WhatsApp öffnen", sendBooking);
+      addButton("Neu beginnen", resetChat, true);
+    }
+
+    function sendBooking() {
+      const text =
+        "Buchungsanfrage Mamo-Go:\n" +
+        "Von: " + booking.from + "\n" +
+        "Nach: " + booking.to + "\n" +
+        "Datum: " + booking.day + "\n" +
+        "Uhrzeit: " + booking.time + "\n" +
+        "Zusatz: " + (booking.extra || "Keine Angabe");
+
+      window.open(
+        "https://wa.me/491727844028?text=" + encodeURIComponent(text),
+        "_blank",
+        "noopener,noreferrer"
+      );
+
+      message.textContent =
+        "Ihre Anfrage wurde vorbereitet. Bitte senden Sie die Nachricht in WhatsApp ab.";
+      buttons.innerHTML = "";
+      addButton("Schließen", closeChat);
+    }
+
+    toggle.addEventListener("click", function () {
+      if (chat.hidden) {
+        showChat();
+      } else {
+        closeChat();
+      }
+    });
+
+    close.addEventListener("click", closeChat);
+
+    const startButton = document.getElementById("booking-start");
+    const noButton = document.getElementById("booking-no");
+
+    if (startButton) {
+      startButton.addEventListener("click", startBooking);
+    }
+
+    if (noButton) {
+      noButton.addEventListener("click", closeChat);
+    }
+
+    window.setTimeout(function () {
+      if (chat.hidden) {
+        tooltip.classList.add("tooltip-hidden");
+      }
+    }, 5000);
+
+  });
+  </script>
+</body>
+</html>
+
+
