@@ -458,7 +458,7 @@ summary:focus-visible {
   .image-note { right: 12px; bottom: 15px; padding: 12px 15px; }
   .image-note-icon { width: 36px; height: 36px; }
   .video-section { min-height: 390px; }
-  .video-section > video { object-position: center; }
+  .video-section > video { object-position: 80% center; }
   .video-shade { background: linear-gradient(90deg, rgba(5,30,35,.84), rgba(5,30,35,.36)); }
   .video-caption { width: calc(100% - 36px); padding: 65px 0; }
   .video-caption h2 { font-size: 43px; }
